@@ -20,7 +20,7 @@ function App() {
               element={<Home />}
             />
             <Route 
-              path="/matchup" 
+              path="/documents" 
               element={<Matchup />}
             />
             <Route 
