@@ -74,9 +74,7 @@ npm run develop
 
 ## Resources
 
-- Hoang, Andrew. Instructor. Guidance given during class. Date accessed: November 4-14, 2022.
-- Scharf, Michael. Teaching assistant. Guidance given during class time. November 4-14, 2022.
-- 
+- "Big Happy Toothy Cartoon Smile". <b>goff.brian @ Vecteezy</b>. <https://www.vecteezy.com/vector-art/553849-big-happy-toothy-cartoon-smile-vector-icon>. Accessed: November 22, 2022. 
 
 ## License
 
