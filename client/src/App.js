@@ -37,13 +37,17 @@ function App() {
   return (
     // <ApolloProvider client={client}>
       // <Router>
+      <View>
+      {/* Remember to render the `Relayer` component into your app! */}
+        <m.Relayer />
         <div className="flex-column justify-center align-center min-100-vh bg-primary">
-        <Header pages={pages} setCurrentPage={setCurrentPage} currentPage={currentPage} />
+          <Header pages={pages} setCurrentPage={setCurrentPage} currentPage={currentPage} />
           <main>
               <Page currentPage={currentPage}></Page>
           </main>
-        <Footer />
+          <Footer />
         </div>
+        </View>
       // </Router>
     // </ApolloProvider>
   );
