@@ -16,6 +16,7 @@
     },
     "dependencies": {
         "@magic-sdk/react-native": "^11.1.0",
+        "axios": "^1.2.0",
         "react-native-webview": "^8.2.1"
     }
 }
