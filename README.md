@@ -76,6 +76,8 @@ npm run develop
 
 - "Big Happy Toothy Cartoon Smile". <b>goff.brian @ Vecteezy</b>. <https://www.vecteezy.com/vector-art/553849-big-happy-toothy-cartoon-smile-vector-icon>. Accessed: November 22, 2022. 
 
+- "Health History Form". <https://fofhealthcenter.org/files/galleries/ada_health_history_english.pdf>. Accessed: November 29, 2022.
+
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
