@@ -14,5 +14,9 @@
     "license": "ISC",
     "devDependencies": {
         "concurrently": "^5.3.0"
+    },
+    "dependencies": {
+        "@magic-sdk/react-native": "^11.1.0",
+        "react-native-webview": "^8.2.1"
     }
 }
