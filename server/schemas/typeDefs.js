@@ -1,10 +1,10 @@
-const { gql } = require('apollo-server-express');
+// const { gql } = require('apollo-server-express');
 
-const typeDefs = gql`
-
-
+// const typeDefs = gql`
 
 
-`;
 
-module.exports = typeDefs;
+
+// `;
+
+// module.exports = typeDefs;
