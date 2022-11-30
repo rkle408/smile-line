@@ -122,6 +122,10 @@ const Health = () => {
                 <input id="gerd" type='checkbox' />
                     GERD
                 </label>
+                <label htmlFor='diabetes'>
+                <input id="diabetes" type='checkbox' />
+                    Diabetes
+                </label>
                 <label htmlFor='seizures'>
                 <input id="seizures" type='checkbox' />
                     Seizures
@@ -135,6 +139,51 @@ const Health = () => {
                     Organ Transplants Specify: 
                 <input id= "OT" type="text" />
                 </label>
+                <label htmlFor='smoke'>
+                <input id="smoke" type='checkbox' />
+                    Usage of tobacco (smoking, snuff, chew, bidis)?
+                </label>
+                <label htmlFor='CD'>
+                <input id="cd" type='checkbox' />
+                    Usage of controlled substances (drugs)?
+                </label>
+                <label htmlFor='alcohol'>
+                <input id="alcohol" type='checkbox' />
+                    Drink alcoholic beverages?
+                </label>
+            </div>
+
+            <h3>Dental Information</h3>
+            <div>Please select the box to indicate if you HAVE had any of the following problems.</div>
+            <div>
+                <label htmlFor='sensitive'>
+                <input id="sensitive" type='checkbox' />
+                    Your teeth are sensitive to cold, hot, sweets, or pressure
+            </label>
+            <label htmlFor='dry'>
+                <input id="dry" type='checkbox' />
+                    Your mouth is dry
+            </label>
+            <label htmlFor='TMJ'>
+                <input id="TMJ" type='checkbox' />
+                    You have clicking, popping, or discomfort in the jaw
+            </label>
+            <label htmlFor='grind'>
+                <input id="grind" type='checkbox' />
+                    You brux or grind your teeth
+            </label>
+            <label htmlFor='injury'>
+                <input id="injury" type='checkbox' />
+                    You had a serious injury to your head or mouth
+            </label>
+            </div>
+            <div>
+            <label htmlFor='exam'>
+                Date of your last dental exam:
+                <input id="exam" type='text' />
+                What was done at that time?
+                <input type='text' />
+            </label>
             </div>
         </form>
     </div>
