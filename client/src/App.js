@@ -2,24 +2,25 @@ import logo from './logo.svg';
 import './App.css';
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
+// import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 
-const client = new ApolloClient({
-  uri: '/graphql',
-  cache: new InMemoryCache(),
-});
+// const client = new ApolloClient({
+//   uri: '/graphql',
+//   cache: new InMemoryCache(),
+// });
 
 function App() {
   return (
-    <ApolloProvider client={client}>
+    // <ApolloProvider client={client}>
       <Router>
         <div className="flex-column justify-center align-center min-100-vh bg-primary">
           <Routes>
-
+            <Route>A</Route>
+            <Route>B</Route>
           </Routes>
         </div>
       </Router>
-    </ApolloProvider>
+    // </ApolloProvider>
   );
 }
 
