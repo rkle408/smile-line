@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from "./components/Header";
 import Page from "./components/Page";
 import Footer from "./components/Footer";
@@ -36,7 +36,7 @@ function App() {
 
   return (
     // <ApolloProvider client={client}>
-      <Router>
+      // <Router>
         <div className="flex-column justify-center align-center min-100-vh bg-primary">
         <Header pages={pages} setCurrentPage={setCurrentPage} currentPage={currentPage} />
           <main>
@@ -44,7 +44,7 @@ function App() {
           </main>
         <Footer />
         </div>
-      </Router>
+      // </Router>
     // </ApolloProvider>
   );
 }
