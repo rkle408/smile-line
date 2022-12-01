@@ -49,11 +49,18 @@ const Health = () => {
         <form autoComplete='off' className='HealthForm' onSubmit={handleForm}>
             <h3>Health History Form</h3>
             <div>
-                <label htmlFor='name'>
+                <label htmlFor='last'>
                     Last name: <input id='last' type='text' />
-                    First name: <input id='first' type='text' />
-                    Middle initial: <input id='middle' type='text' />
                 </label>
+                <label htmlFor='first'>
+                    First name: <input id='first' type='text' />
+                </label>
+                <label htmlFor='middle'>
+                    Middle initial: <input id='middle' type='text' />
+                </label>   
+            </div>
+            <div>
+
             </div>
             <h3>Medical Information</h3>
             <div>
