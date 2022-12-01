@@ -1,4 +1,6 @@
 import React from "react";
+import HIPAAForm from "../assets/HIPAA_Consent_Form.png";
+import ConsentForm from "../assets/Consent_Form.png";
 
 const HIPAA = () => {
 
@@ -8,6 +10,8 @@ const HIPAA = () => {
 
   return (
     <div>
+        <img src={HIPAAForm} alt="Screenshot of HIPAA form"></img><br/>
+        <img src={ConsentForm} alt="Screenshot of Consent"></img><br/>
         <button onClick={downloadFile} target="_blank">View HIPAA and Consent Forms</button>
     </div>
   )
