@@ -22,16 +22,21 @@ import axios from 'axios';
 // serious injury to head?
 
 const Health = () => {
+    function toggle(value) {
+        return !value;
+    }
     // form states
     const [medication, setMeds] = useState('');
+    const [localAnesthetic, setLa] = useState(false);
+
     // handleform event
     const handleForm = (e) => {
         e.preventDefault();
-        // console.log(medication);
         const data ={
             Medication: medication,
+            LocalAnesthetic: localAnesthetic,
         }
-
+        console.log(data);
         axios.post('https://sheet.best/api/sheets/fe48f11d-b074-4d60-a64f-4cc9a28a8cfe', data)
         .then((response) => { 
             console.log(response);
@@ -42,6 +47,14 @@ const Health = () => {
   return (
     <div>
         <form autoComplete='off' className='HealthForm' onSubmit={handleForm}>
+            <h3>Health History Form</h3>
+            <div>
+                <label htmlFor='name'>
+                    Last name: <input id='last' type='text' />
+                    First name: <input id='first' type='text' />
+                    Middle initial: <input id='middle' type='text' />
+                </label>
+            </div>
             <h3>Medical Information</h3>
             <div>
                 <label htmlFor="meds">Are you or have you recently taken any prescription or over the counter medicine(s)? If so, please list all, including vitamins, natural or herbal preparations and/or dietary supplements: </label>
@@ -50,10 +63,10 @@ const Health = () => {
             <div>
                 <div>Are you allergic to or have you had a reaction to:</div>
                 <label htmlFor='LA'>
-                <input id="LA" type='checkbox' />
+                <input id="LA" type='checkbox' checked={localAnesthetic} onChange={(e) => setLa(toggle)}/>
                 Local Anesthetics
                 </label>
-                <label htmlFor='aspirin'>
+                {/* <label htmlFor='aspirin'>
                 <input id="aspirin" type='checkbox' />
                 Aspirin
                 </label>
@@ -72,9 +85,9 @@ const Health = () => {
                 <label htmlFor='allergies'>
                 <input id="allergies" type='checkbox' />
                 Codeine or other narcotics
-                </label>
+                </label> */}
             </div>
-            <div>
+            {/* <div>
                 <div>Have you had an orthopedic total joint (hip, knee, elbow, finger) replacement?</div>
                 <label> Date: <input id="tjr" type="text"/> </label>
                 <label> If yes, have you had any complications? <input id="tjr" type="text"/> </label>
@@ -202,10 +215,10 @@ const Health = () => {
                 What was done at that time?
                 <input type='text' />
             </label>
-            </div>
+            </div> */}
             <div>
                 <button type='submit' className='submit-button'>Submit</button>
-            </div>
+            </div> 
         </form>
     </div>
   )
