@@ -23,16 +23,29 @@ import axios from 'axios';
 
 const Health = () => {
     // form states
-
+    const [medication, setMeds] = useState('');
     // handleform event
+    const handleForm = (e) => {
+        e.preventDefault();
+        // console.log(medication);
+        const data ={
+            Medication: medication,
+        }
+
+        axios.post('https://sheet.best/api/sheets/fe48f11d-b074-4d60-a64f-4cc9a28a8cfe', data)
+        .then((response) => { 
+            console.log(response);
+            setMeds('');
+        })
+    }
 
   return (
     <div>
-        <form autoComplete='off' className='HealthForm'>
+        <form autoComplete='off' className='HealthForm' onSubmit={handleForm}>
             <h3>Medical Information</h3>
             <div>
                 <label htmlFor="meds">Are you or have you recently taken any prescription or over the counter medicine(s)? If so, please list all, including vitamins, natural or herbal preparations and/or dietary supplements: </label>
-                <textarea id="meds" type="text" />
+                <textarea id="meds" type="text" onChange={(e) => setMeds(e.target.value)} value={medication}/>
             </div>
             <div>
                 <div>Are you allergic to or have you had a reaction to:</div>
@@ -189,6 +202,9 @@ const Health = () => {
                 What was done at that time?
                 <input type='text' />
             </label>
+            </div>
+            <div>
+                <button type='submit' className='submit-button'>Submit</button>
             </div>
         </form>
     </div>
