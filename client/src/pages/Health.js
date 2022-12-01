@@ -92,6 +92,12 @@ const Health = () => {
                 <label htmlFor='allergies'>
                 <input id="allergies" type='checkbox' />
                 Codeine or other narcotics
+
+                </label>
+                <label htmlFor='allergies'>
+                <input id="allergies" type='checkbox' />
+                Latex
+                </label>
                 </label> */}
             </div>
             {/* <div>
