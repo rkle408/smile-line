@@ -10,9 +10,9 @@ const HIPAA = () => {
 
   return (
     <div>
-        <img src={HIPAAForm} alt="Screenshot of HIPAA form"></img><br/>
-        <img src={ConsentForm} alt="Screenshot of Consent"></img><br/>
-        <button onClick={downloadFile} target="_blank">View HIPAA and Consent Forms</button>
+        <img src={HIPAAForm} alt="Screenshot of HIPAA form"></img><br/><br/>
+        <img src={ConsentForm} alt="Screenshot of Consent"></img><br/><br/>
+        <button onClick={downloadFile} target="_blank">View HIPAA and Consent Forms</button><br/>
     </div>
   )
 }
