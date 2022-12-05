@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import Header from "./components/Header";
 import Page from "./components/Page";
 import Footer from "./components/Footer";
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 
 // import { Magic } from 'magic-sdk';
