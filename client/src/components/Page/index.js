@@ -7,6 +7,7 @@ import HIPAA from "../../pages/HIPAA";
 import Questions from "../../pages/Questions"
 import PageContent from "../PageContent";
 import Find from "../../pages/Find";
+import Resources from "../../pages/Resources";
 
 
 
@@ -22,6 +23,8 @@ function Page({ currentPage }) {
             return <Health />
         } else if (currentPage.name === "HIPAA") {
             return <HIPAA />
+        } else if (currentPage.name === "Resources") {
+            return <Resources />
         } else if (currentPage.name === "Questions") {
             return <Questions />
         } else {

@@ -35,6 +35,9 @@ function App() {
       name: "HIPAA"
     },
     {
+      name: "Resources"
+    },
+    {
       name: "Questions"
     }
   ]);
