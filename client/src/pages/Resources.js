@@ -4,14 +4,14 @@ const Resources = () => {
 
     const [posts, setPosts] = useState([]);
     useEffect(() => {
-       fetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
-          .then((response) => response.json())
-          .then((data) => {
-             console.log(data);
-             setPosts(data);
-          })
-          .catch((err) => {
-             console.log(err.message);
+       fetch('https://health.gov/myhealthfinder/api/v3/topicsearch.json?lang=en&keyword=teeth')
+       .then((response) => response.json())
+       .then((data) => {
+          console.log(data);
+          setPosts(data);
+       })
+       .catch((err) => {
+          console.log(err.message);
           });
     }, []);
 
@@ -20,11 +20,11 @@ const Resources = () => {
             <div className="posts-container">
                 {posts.map((post) => {
                     return (
-                        <div className="post-card" key={post.id}>
-                            <h2 className="post-title">{post.title}</h2>
-                            <p className="post-body">{post.body}</p>
+                        <div className="postCard" >
+                            <h2 className="postTitle">{post.Result.Resources.Resource.Title}</h2>
+                            <p className="postBody">{post.Resources.Resource.Title}</p>
                             <div className="button">
-                            <div className="delete-btn">Delete</div>
+                            <div className="deleteBtn">Delete</div>
                         </div>
             </div>
          );
