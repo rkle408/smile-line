@@ -26,7 +26,10 @@ function App() {
       name: "Fees"
     },
     {
-      name: "Health"
+      name: "Find A Dentist"
+    },
+    {
+      name: "Health History Form"
     },
     {
       name: "HIPAA"
