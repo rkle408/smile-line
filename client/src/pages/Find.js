@@ -1,14 +1,12 @@
 import React from "react";
-import Alert from 'react-bootstrap/Alert';
+import "./style.css";
 
 const Find = () => {
 
     return (
         <section>
-            <Alert variant="dark">
-                <Alert.Heading>Find a Dentist near you!</Alert.Heading>
-            </Alert><br /><br />
-            <a href="https://findadentist.ada.org/dentists-catalog" target="_blank" rel="noopener noreferrer">Click here to find ADA dentists</a>
+            <h1 className="title">Find a Dentist near you!</h1>
+            <a className="link" href="https://findadentist.ada.org/dentists-catalog" target="_blank" rel="noopener noreferrer">Click here to find ADA dentists</a>
         </section>
     )
 };

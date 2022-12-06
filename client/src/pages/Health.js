@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import "./style.css";
 
 // medical info
 // medication
@@ -173,7 +174,7 @@ const Health = () => {
   return (
     <div>
         <Form autoComplete='off' className='HealthForm' onSubmit={handleForm}>
-            <h3>Health History Form</h3>
+            <h1 className="title">Health History Form</h1>
                 <Form.Group className="mb-3" controlId="formBasicInfo">
                 <Row className="mb-3">
                 <Col>
@@ -220,7 +221,7 @@ const Health = () => {
                 </Col>
                 </Row>
 
-            <h3>Medical Information</h3>
+            <h2>Medical Information</h2>
             <Form.Group className="mb-3" controlId="formMedicalHistory">
                 <Form.Label htmlFor="meds">Are you or have you recently taken any prescription or over the counter medicine(s)? <br/>If so, please list all, including vitamins, natural or herbal preparations and/or dietary supplements: </Form.Label>
                 <Form.Control id="meds" type="text" onChange={(e) => setMeds(e.target.value)} value={medications}/><br/>
@@ -342,7 +343,7 @@ const Health = () => {
                 </div>
             </Form.Group>
 
-            <h3>Dental Information</h3>
+            <h2>Dental Information</h2>
             <div>Please select the box to indicate if you HAVE had any of the following problems.</div>
 
             <Form.Group className="mb-3" controlId="formMedicalHistory">
@@ -377,7 +378,7 @@ const Health = () => {
             </div>
             </Form.Group>
             <div>
-                <Button variant="success" type='submit' className='submit-button'>Submit</Button>
+                <Button variant="primary" type='submit' className='submit-button'>Submit</Button>
             </div> 
         </Form>
     </div>

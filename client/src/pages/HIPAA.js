@@ -2,6 +2,7 @@ import React from "react";
 import HIPAAForm from "../assets/HIPAA_Consent_Form.png";
 import ConsentForm from "../assets/Consent_Form.png";
 import Button from 'react-bootstrap/Button';
+import "./style.css";
 
 const HIPAA = () => {
 
@@ -11,12 +12,12 @@ const HIPAA = () => {
 
   return (
     <div>
-      <h1>HIPAA and Procedure Consent Forms</h1>
+      <h1 className="title">HIPAA and Procedure Consent Forms</h1>
       <p>Your dentist's office will likely have their own forms for you to sign. Make sure you read theirs very thoroughly before signing!</p>
-      <p>In order to help you prepare and save time, here are some examples of what those forms may look like. Read through, and make notes if you have questions for your dentist!</p>
+      <p>In order to help you prepare and save time, here are some examples of what those forms may look like. Read through, and make notes if you have questions for your dentist!</p><br/>
         <img src={HIPAAForm} alt="Screenshot of HIPAA form" style={{border: "2px solid black", borderRadius: "10px"}}></img>
         <img src={ConsentForm} alt="Screenshot of Consent" style={{border: "2px solid black", borderRadius: "10px"}}></img><br/><br/>
-        <Button variant="success" onClick={downloadFile} target="_blank">View HIPAA and Procedure Consent Forms</Button><br/>
+        <Button variant="primary" onClick={downloadFile} target="_blank">View HIPAA and Procedure Consent Forms</Button><br/>
     </div>
   )
 }

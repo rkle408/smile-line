@@ -1,0 +1,15 @@
+.title {
+    font-size: 40px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    /* font-family: 'Shadows Into Light', cursive; */
+}
+
+.link {
+    text-decoration: none;
+    color: #7161ef;
+    font-weight: bold;
+}
+
+.link:hover {
+    color: #86bbd8;
+}
