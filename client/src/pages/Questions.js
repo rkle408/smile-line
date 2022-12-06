@@ -7,7 +7,7 @@ import "./style.css";
 const Questions = () => {
 
     return (
-        <div>    
+        <div className="questions">    
             <h1 className="title">You have questions? We have answers!</h1><br/>
         <div>
         <Row xs={1} md={2} className="g-4">
@@ -38,18 +38,15 @@ const Questions = () => {
 
         <div>
         <Row xs={1} md={2} className="g-4">
-            <Col>
-                <Card border="dark">
-                    <Card.Body>
-                        <Card.Header as="h5">Why should I floss??</Card.Header>
-                        <Card.Text>
-                            Brushing will miss the areas in between your teeth! And it's definitely not going to get out that piece of garlic lodged into your gums!<br/>
-                            It'll help to remove plaque/build up and bacteria that you can't see or feel. Removing the plaque with floss will help to remove the bacteria that causes swollen and bleeding gums!<br/><br/>
-                            <hr />
-                            <Card.Link className="link" href="https://www.youtube.com/watch?v=CBd_2Dk0Svw">Click here to see a video on proper flossing!</Card.Link>
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
+        <Col>
+            <Card border="dark">
+                <Card.Body>
+                    <Card.Header as="h5">What happens during a cleaning? It just feels like you're scratching my teeth.</Card.Header>
+                    <Card.Text>
+                        We use special instruments that curve to the roots and direction of your teeth. Generally, we try to go at and below the gumline to pull any plaque or food particles that are hardened on to your teeth or in a place your brush and floss can't reach!
+                    </Card.Text>
+                </Card.Body>
+            </Card>
             </Col>
 
             <Col>
@@ -72,9 +69,12 @@ const Questions = () => {
             <Col>
                 <Card border="dark">
                     <Card.Body>
-                        <Card.Header as="h5">What happens during a cleaning? It just feels like you're scratching my teeth.</Card.Header>
+                        <Card.Header as="h5">Why should I floss??</Card.Header>
                         <Card.Text>
-                            We use special instruments that curve to the roots and direction of your teeth. Generally, we try to go at and below the gumline to pull any plaque or food particles that are hardened on to your teeth or in a place your brush and floss can't reach!
+                            Brushing will miss the areas in between your teeth! And it's definitely not going to get out that piece of garlic lodged into your gums!<br/>
+                            It'll help to remove plaque/build up and bacteria that you can't see or feel. Removing the plaque with floss will help to remove the bacteria that causes swollen and bleeding gums!<br/><br/>
+                            <hr />
+                            <Card.Link className="link" href="https://www.youtube.com/watch?v=CBd_2Dk0Svw">Click here to see a video on proper flossing!</Card.Link>
                         </Card.Text>
                     </Card.Body>
                 </Card>

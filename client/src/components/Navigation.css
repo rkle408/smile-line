@@ -1,0 +1,38 @@
+
+.brand {
+    font-size: 50px;
+    font-family: 'Sansita Swashed', cursive;
+    padding: 15px;
+}
+
+nav {
+    font-size: 10px;
+    color: #6247aa;
+    cursor: pointer;
+    background-color: #dec9e9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navlink:hover {
+    font-weight: 550;
+    color:#6247aa;
+}
+
+.allnavlinks {
+    margin-right: 20px;
+    display: flex;
+}
+
+
+.button {
+    margin-left: 1px;
+    border: solid 1px #6247aa;
+    border-radius: 20px;
+}
+
+.button:hover {
+    background-color: white;
+    font-weight: 400;
+}
