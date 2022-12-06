@@ -80,6 +80,7 @@ npm run start
 
 - "Big Happy Toothy Cartoon Smile". <b>goff.brian @ Vecteezy</b>. <https://www.vecteezy.com/vector-art/553849-big-happy-toothy-cartoon-smile-vector-icon>. Accessed: November 22, 2022. 
 - "Health History Form". <https://fofhealthcenter.org/files/galleries/ada_health_history_english.pdf>. Accessed: November 29, 2022.
+- "How to Consume REST APIs in React – a Beginner's Guide". <b>FreeCodeCamp</b>. <https://www.freecodecamp.org/news/how-to-consume-rest-apis-in-react/>. Accessed: December 5, 2022.
 - "Patient HIPAA Consent Form". <b>Dr. Daniel Dowdle</b>. <https://www.rosecreekdental.com/forms/Consent_and_HIPPA.pdf>. Accessed: December 1, 2022.
 - "React Bootstrap". <b>React Bootstrap</b>. <https://react-bootstrap.netlify.app/>. Accessed: December 5, 2022.
 - "Understanding costs in advance". <b>CMS.gov</b>. <https://www.cms.gov/nosurprises/consumers/understanding-costs-in-advance>. Accessed: November 30, 2022.
