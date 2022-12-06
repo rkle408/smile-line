@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./style.css";
+import Nav from 'react-bootstrap/Nav'
 
 function Header(props) {
     const {
@@ -13,17 +14,18 @@ function Header(props) {
     }, [currentPage])
 
     return (
-    <nav>
+    <Nav className="justify-content-end">
         <ul className="nav-container">
             {pages.map((page) => {
                 return (
-                <li className={currentPage.name === page.name && "active"} key={page.name}><span onClick={() => setCurrentPage(page)}>
+                <Nav.Item style={{cursor: "pointer"}} className={currentPage.name === page.name && "active"} key={page.name}>
+                <span onClick={() => setCurrentPage(page)}>
                     {page.name}
-                </span></li>
+                </span></Nav.Item>
                 )
             })}
         </ul>
-    </nav>
+    </Nav>
     );
 }
 
