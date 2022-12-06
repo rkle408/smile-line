@@ -78,6 +78,7 @@ function Contact (){
                         <p>{errorMessage}</p>
                     </div>
                 )}
+                <br/>
                 <Button variant="primary" className="submitBtn" type="submit">Submit</Button>
             </form>
         </section>

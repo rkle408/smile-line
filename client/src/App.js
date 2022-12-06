@@ -53,10 +53,12 @@ function App() {
         {/* <m.Relayer /> */}
         <div >
           <Header pages={pages} setCurrentPage={setCurrentPage} currentPage={currentPage} />
-          <main className='m-5'>
+          <main className='pageContainer'>
+            <div className='m-5 contentWrap'>
               <Page currentPage={currentPage}></Page>
+            </div>
+            <Footer className='footer'/>
           </main>
-          <Footer />
         </div>
         </> 
         // {/* </View> */}
