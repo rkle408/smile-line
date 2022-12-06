@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
+import Button from 'react-bootstrap/Button';
 
 function Contact (){
     const [formState, setFormState] = useState({
@@ -75,7 +76,7 @@ function Contact (){
                         <p>{errorMessage}</p>
                     </div>
                 )}
-                <button className="submitBtn" type="submit">Submit</button>
+                <Button variant="success" className="submitBtn" type="submit">Submit</Button>
             </form>
         </section>
     )

@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 
 const Fees = () => {
 
@@ -8,7 +9,7 @@ const Fees = () => {
 
   return (
     <div>
-        <button className="resumeBtn" onClick={downloadFile} target="_blank">View Sample Good Faith Estimate</button>
+        <Button variant='success' className="resumeBtn" onClick={downloadFile} target="_blank">View Sample Good Faith Estimate</Button>
     </div>
   )
 }

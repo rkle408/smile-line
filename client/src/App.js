@@ -51,9 +51,9 @@ function App() {
       <View>  */}
       {/* Remember to render the `Relayer` component into your app! */}
         {/* <m.Relayer /> */}
-        <div className="flex-column justify-center align-center min-100-vh bg-primary">
+        <div >
           <Header pages={pages} setCurrentPage={setCurrentPage} currentPage={currentPage} />
-          <main>
+          <main className='m-5'>
               <Page currentPage={currentPage}></Page>
           </main>
           <Footer />
