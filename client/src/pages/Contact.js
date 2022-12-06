@@ -1,5 +1,8 @@
 import React, { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import "./style.css";
 
 function Contact (){
     const [formState, setFormState] = useState({
@@ -56,26 +59,27 @@ function Contact (){
 
     return (
         <section className="contact">
-            <h1 className="H1">Contact Smile Line!</h1>
+            <h1 className="title">Contact Smile Line!</h1>
             <form ref={form} id="contact-form" onSubmit={handleSubmit}>
                 <div>
-                    <label htmlFor="name">Name: </label><br/>
-                    <input className="textbox" type="text" name="Name" defaultValue={name} onBlur={handleChange}/>
+                    <Form.Label htmlFor="name">Name: </Form.Label><br/>
+                    <Form.Control className="textbox" type="text" name="Name" defaultValue={name} onBlur={handleChange}/>
                 </div>
                 <div>
-                    <label htmlFor="email">Email: </label><br/>
-                    <input className="textbox" type="email" name="Email" defaultValue={email} onBlur={handleChange}/>
+                    <Form.Label htmlFor="email">Email: </Form.Label><br/>
+                    <Form.Control className="textbox" type="email" name="Email" defaultValue={email} onBlur={handleChange}/>
                 </div>
                 <div>
-                    <label htmlFor="message">Message: </label><br/>
-                    <textarea className="textbox" name="Message" rows="4" defaultValue={message} onBlur={handleChange}/>
+                    <Form.Label htmlFor="message">Message: </Form.Label><br/>
+                    <Form.Control className="textbox" name="Message" as="textarea" rows={3} defaultValue={message} onBlur={handleChange}/>
                 </div>
                 {errorMessage && (
                     <div>
                         <p>{errorMessage}</p>
                     </div>
                 )}
-                <button className="submitBtn" type="submit">Submit</button>
+                <br/>
+                <Button variant="primary" className="submitBtn" type="submit">Submit</Button>
             </form>
         </section>
     )

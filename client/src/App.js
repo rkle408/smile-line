@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import Header from "./components/Header";
 import Page from "./components/Page";
 import Footer from "./components/Footer";
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 
 // import { Magic } from 'magic-sdk';
@@ -20,10 +21,7 @@ function App() {
 
   const [pages] = useState([
     {
-      name: "Contact"
-    },
-    {
-      name: "Fees"
+      name: "Your Questions"
     },
     {
       name: "Find A Dentist"
@@ -31,14 +29,17 @@ function App() {
     {
       name: "Health History Form"
     },
+    // {
+    //   name: "Resources"
+    // },
     {
-      name: "HIPAA"
+      name: "Consent Forms"
     },
     {
-      name: "Resources"
+      name: "Fees"
     },
     {
-      name: "Questions"
+      name: "Contact Smile Line"
     }
   ]);
 
@@ -50,12 +51,14 @@ function App() {
       <View>  */}
       {/* Remember to render the `Relayer` component into your app! */}
         {/* <m.Relayer /> */}
-        <div className="flex-column justify-center align-center min-100-vh bg-primary">
+        <div >
           <Header pages={pages} setCurrentPage={setCurrentPage} currentPage={currentPage} />
-          <main>
+          <main className='pageContainer'>
+            <div className='m-5 contentWrap'>
               <Page currentPage={currentPage}></Page>
+            </div>
+            <Footer className='footer'/>
           </main>
-          <Footer />
         </div>
         </> 
         // {/* </View> */}

@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
 import "./style.css";
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
 
 function Header(props) {
     const {
@@ -13,17 +16,21 @@ function Header(props) {
     }, [currentPage])
 
     return (
-    <nav>
-        <ul className="nav-container">
+    <Nav className="nav">
+        <Navbar>
+        <Container>
+            <h1 className="brand">Smile Line</h1>
             {pages.map((page) => {
                 return (
-                <li className={currentPage.name === page.name && "active"} key={page.name}><span onClick={() => setCurrentPage(page)}>
+                <Nav.Link className={currentPage.name === page.name && "active"} key={page.name} id="navLink">
+                <span onClick={() => setCurrentPage(page)}>
                     {page.name}
-                </span></li>
+                </span></Nav.Link>
                 )
             })}
-        </ul>
-    </nav>
+            </Container>
+        </Navbar>
+    </Nav>
     );
 }
 

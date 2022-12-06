@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import "./style.css";
 
 // medical info
 // medication
@@ -168,194 +173,214 @@ const Health = () => {
 
   return (
     <div>
-        <form autoComplete='off' className='HealthForm' onSubmit={handleForm}>
-            <h3>Health History Form</h3>
+        <Form autoComplete='off' className='HealthForm' onSubmit={handleForm}>
+            <h1 className="title">Health History Form</h1>
+                <Form.Group className="mb-3" controlId="formBasicInfo">
+                <Row className="mb-3">
+                <Col>
+                    <Form.Label htmlFor='last'>
+                        Last name: <Form.Control id='last' type='text' onChange={(e) => setLastname(e.target.value)} value={lastname} />
+                    </Form.Label>   
+                </Col>
+                <Col>
+                    <Form.Label htmlFor='first'>
+                        First name: <Form.Control id='first' type='text' onChange={(e) => setFirstname(e.target.value)} value={firstname} />
+                    </Form.Label>   
+                </Col>
+                <Col>
+                    <Form.Label htmlFor='middle'>
+                       Middle initial: <Form.Control id='middle' type='text' onChange={(e) => setMiddleinitial(e.target.value)} value={middleinitial} />
+                    </Form.Label>  
+                </Col>
+                </Row>
+                </Form.Group>
+             
+                <Row className="mb-3">
+                <Col>
+                <Form.Label htmlFor='dob'>
+                    Date of Birth: <Form.Control id='dob' type='text' onChange={(e) => setBirthday(e.target.value)} value={birthday} />
+                </Form.Label> 
+                </Col>
+
+                <Col>
+                <Form.Label htmlFor='number'>
+                    Phone #: <Form.Control id='number' type='text' onChange={(e) => setPhone(e.target.value)} value={phonenumber}  />
+                </Form.Label>
+                </Col>
+
+                <Col>
+                <Form.Label htmlFor='address'>
+                    Address: <Form.Control id='address' type='text' onChange={(e) => setAddress(e.target.value)} value={address}  />
+                </Form.Label>
+                </Col>
+
+                <Col>
+                <Form.Label htmlFor='email'>
+                    Email: <Form.Control id='email' type='email' placeholder="name@example.com" onChange={(e) => setEmail(e.target.value)} value={email}  />
+                </Form.Label>
+                </Col>
+                </Row>
+
+            <h2>Medical Information</h2>
+            <Form.Group className="mb-3" controlId="formMedicalHistory">
+                <Form.Label htmlFor="meds">Are you or have you recently taken any prescription or over the counter medicine(s)? <br/>If so, please list all, including vitamins, natural or herbal preparations and/or dietary supplements: </Form.Label>
+                <Form.Control id="meds" type="text" onChange={(e) => setMeds(e.target.value)} value={medications}/><br/>
+            
             <div>
-                <label htmlFor='last'>
-                    Last name: <input id='last' type='text' onChange={(e) => setLastname(e.target.value)} value={lastname} />
-                </label>
-                <label htmlFor='first'>
-                    First name: <input id='first' type='text' onChange={(e) => setFirstname(e.target.value)} value={firstname} />
-                </label>
-                <label htmlFor='middle'>
-                    Middle initial: <input id='middle' type='text' onChange={(e) => setMiddleinitial(e.target.value)} value={middleinitial} />
-                </label>
-                <label htmlFor='dob'>
-                    Date of Birth: <input id='dob' type='text' onChange={(e) => setBirthday(e.target.value)} value={birthday} />
-                </label> 
+                <p className="mb-3">Are you allergic to or have you had a reaction to:</p>
+                <Form.Label htmlFor='LA'>
+                <Form.Check inline id="LA" type='checkbox' label='Local Anesthetics' checked={localAnesthetic} onChange={(e) => setLa(toggle)} />
+                </Form.Label>
+
+                <Form.Label htmlFor='aspirin'>
+                <Form.Check inline id="aspirin" type='checkbox' label='Aspirin' checked={aspirin} onChange={(e) => setAspirin(toggle)} />
+                </Form.Label>
+
+                <Form.Label htmlFor='penicillin'>
+                <Form.Check inline label='Penicillin or other antibiotics' id="penicillin" type='checkbox' checked={penicillin} onChange={(e) => setPenicillin(toggle)}/>
+                </Form.Label>
+
+                <Form.Label htmlFor='barb'>
+                <Form.Check inline label='Barbiturates, sedatives, or sleeping pills' id="barb" type='checkbox' checked={barb} onChange={(e) => setBarb(toggle)}/>
+                </Form.Label>
+
+                <Form.Label htmlFor='sulfa'>
+                <Form.Check inline label='Sulfa drugs' id="sulfa" type='checkbox' checked={sulfa} onChange={(e) => setSulfa(toggle)}/>
+                </Form.Label>
+
+                <Form.Label htmlFor='codeine'>
+                <Form.Check inline label='Codeine or other narcotics' id="codeine" type='checkbox' checked={codeine} onChange={(e) => setCodeine(toggle)}/>
+                </Form.Label>
+
+                <Form.Label htmlFor='latex'>
+                <Form.Check inline label='Latex' id="latex" type='checkbox' checked={latex} onChange={(e) => setLatex(toggle)}/>
+                </Form.Label>
             </div>
-            <div>
-                <label htmlFor='number'>
-                    Phone #: <input id='number' type='text' onChange={(e) => setPhone(e.target.value)} value={phonenumber}  />
-                </label>
+
+            <div className="mb-3">
+                <p>Have you had an orthopedic total joint (hip, knee, elbow, finger) replacement? <br/>
+                <Form.Label htmlFor='tjr'> If yes, please provide the date and any complications: <Form.Control id="tjr" type="text" onChange={(e) => setOrthoJointReplacement(e.target.value)} value={orthojointreplacement}/> </Form.Label></p>
             </div>
-            <div>
-                <label htmlFor='address'>
-                    Address: <input id='address' type='text' onChange={(e) => setAddress(e.target.value)} value={address}  />
-                </label>
+
+            <div className="mb-3">
+                <Form.Label htmlFor='bis'>
+                <Form.Check label="Check this box if you are taking or scheduled to begin taking an antiresorptive agent (like Fosamax®, Actonel®, Atelvia, Boniva®, Reclast, Prolia) for osteoporosis or Paget's disease" id="bis" type='checkbox' checked={antiresorptive} onChange={(e) => setAntiresorptive(toggle)}/>
+                </Form.Label>
             </div>
-            <div>
-                <label htmlFor='email'>
-                    Email: <input id='email' type='text' onChange={(e) => setEmail(e.target.value)} value={email}  />
-                </label>
-            </div>
-            <h3>Medical Information</h3>
-            <div>
-                <label htmlFor="meds">Are you or have you recently taken any prescription or over the counter medicine(s)? If so, please list all, including vitamins, natural or herbal preparations and/or dietary supplements: </label>
-                <textarea id="meds" type="text" onChange={(e) => setMeds(e.target.value)} value={medications}/>
-            </div>
-            <div>
-                <div>Are you allergic to or have you had a reaction to:</div>
-                <label htmlFor='LA'>
-                <input id="LA" type='checkbox' checked={localAnesthetic} onChange={(e) => setLa(toggle)} />
-                Local Anesthetics
-                </label>
-                <label htmlFor='aspirin'>
-                <input id="aspirin" type='checkbox' checked={aspirin} onChange={(e) => setAspirin(toggle)} />
-                Aspirin
-                </label>
-                <label htmlFor='penicillin'>
-                <input id="penicillin" type='checkbox' checked={penicillin} onChange={(e) => setPenicillin(toggle)}/>
-                Penicillin or other antibiotics
-                </label>
-                <label htmlFor='barb'>
-                <input id="barb" type='checkbox' checked={barb} onChange={(e) => setBarb(toggle)}/>
-                Barbiturates, sedatives, or sleeping pills
-                </label>
-                <label htmlFor='sulfa'>
-                <input id="sulfa" type='checkbox' checked={sulfa} onChange={(e) => setSulfa(toggle)}/>
-                Sulfa Drugs
-                </label>
-                <label htmlFor='codeine'>
-                <input id="codeine" type='checkbox' checked={codeine} onChange={(e) => setCodeine(toggle)}/>
-                Codeine or other narcotics
-                </label>
-                <label htmlFor='latex'>
-                <input id="latex" type='checkbox' checked={latex} onChange={(e) => setLatex(toggle)}/>
-                Latex
-                </label>
-            </div>
-            <div>
-                <div>Have you had an orthopedic total joint (hip, knee, elbow, finger) replacement?</div>
-                <label htmlFor='tjr'> If yes, please provide the date and any complications: <input id="tjr" type="text" onChange={(e) => setOrthoJointReplacement(e.target.value)} value={orthojointreplacement}/> </label>
-            </div>
-            <div>
-                <label htmlFor='bis'>
-                <input id="bis" type='checkbox' checked={antiresorptive} onChange={(e) => setAntiresorptive(toggle)}/>
-                Check this box if you are taking or scheduled to begin taking an antiresorptive agent (like Fosamax®, Actonel®, Atelvia, Boniva®, Reclast, Prolia) for osteoporosis or Paget's disease?
-                </label>
-            </div>
+
             <div>
                 <div>
                     Please select the box to indicate if you HAVE had any of the following diseases or problems.
                 </div>
-                <label htmlFor='CVD'>
-                <input id="CVD" type='checkbox' checked={cvd} onChange={(e) => setCvd(toggle)} />
-                    Cardiovascular Disease
-                </label>
-                <label htmlFor='CHF'>
-                <input id="CHF" type='checkbox' checked={chf} onChange={(e) => setChf(toggle)} />
-                    Congestive Heart Failure
-                </label>
-                <label htmlFor='DHV'>
-                <input id="DHV" type='checkbox' checked={dhv} onChange={(e) => setDhv(toggle)}/>
-                    Damaged Heart Valves
-                </label>
-                <label htmlFor='HA'>
-                <input id="HA" type='checkbox' checked={ha} onChange={(e) => setHa(toggle)} />
-                    Heart Attack
-                </label>
-                <label htmlFor='HBP'>
-                <input id="HBP" type='checkbox' checked={hbp} onChange={(e) => setHbp(toggle)} />
-                    High Blood Pressure
-                </label>
-                <label htmlFor='OCHD'>
-                <input id="OCHD" type='checkbox' checked={otherchd} onChange={(e) => setOtherchd(toggle)} />
-                    Other Congenital Heart Defects
-                </label>
-                <label htmlFor='aids'>
-                <input id="aids" type='checkbox' checked={aidshiv} onChange={(e) => setAidshiv(toggle)} />
-                    AIDS or HIV infection
-                </label>
-                <label htmlFor='asthma'>
-                <input id="asthma" type='checkbox' checked={asthma} onChange={(e) => setAsthma(toggle)} />
-                    Asthma
-                </label>
-                <label htmlFor='stroke'>
-                <input id="stroke" type='checkbox' checked={stroke} onChange={(e) => setStroke(toggle)} />
-                    Stroke
-                </label>
-                <label htmlFor='gerd'>
-                <input id="gerd" type='checkbox' checked={gerd} onChange={(e) => setGerd(toggle)} />
-                    GERD
-                </label>
-                <label htmlFor='diabetes'>
-                <input id="diabetes" type='checkbox' checked={diabetes} onChange={(e) => setDiabetes(toggle)} />
-                    Diabetes
-                </label>
-                <label htmlFor='seizures'>
-                <input id="seizures" type='checkbox' checked={seizures} onChange={(e) => setSeizures(toggle)} />
-                    Seizures
-                </label>
-                <label htmlFor='epilepsy'>
-                <input id="epilepsy" type='checkbox' checked={epilepsy} onChange={(e) => setEpilepsy(toggle)} />
-                    Epilepsy
-                </label>
-                <label htmlFor='OT'>
-                <input id="OT" type='checkbox' checked={organtrans} onChange={(e) => setOrgantrans(toggle)} />
-                    Organ Transplants Specify: 
-                <input id= "OT" type="text" onChange={(e) => setOrgantranselab(e.target.value)} value={organtranselab}/>
-                </label>
-                <label htmlFor='smoke'>
-                <input id="smoke" type='checkbox' checked={tobacco} onChange={(e) => setTobacco(toggle)} />
-                    Usage of tobacco (smoking, snuff, chew, bidis)?
-                </label>
-                <label htmlFor='CD'>
-                <input id="cd" type='checkbox' checked={controlsub} onChange={(e) => setControlsub(toggle)} />
-                    Usage of controlled substances (drugs)?
-                </label>
-                <label htmlFor='alcohol'>
-                <input id="alcohol" type='checkbox' checked={alcohol} onChange={(e) => setAlcohol(toggle)}/>
-                    Drink alcoholic beverages?
-                </label>
-            </div>
+                <Form.Label htmlFor='CVD'>
+                <Form.Check inline label='Cardiovascular Disease' id="CVD" type='checkbox' checked={cvd} onChange={(e) => setCvd(toggle)} />
+                </Form.Label>
 
-            <h3>Dental Information</h3>
+                <Form.Label htmlFor='CHF'>
+                <Form.Check inline label='Congestive Heart Failure' id="CHF" type='checkbox' checked={chf} onChange={(e) => setChf(toggle)} />
+                </Form.Label>
+
+                <Form.Label htmlFor='DHV'>
+                <Form.Check inline label='Damaged Heart Valves' id="DHV" type='checkbox' checked={dhv} onChange={(e) => setDhv(toggle)}/>
+                </Form.Label>
+
+                <Form.Label htmlFor='HA'>
+                <Form.Check inline label='Heart Attack' id="HA" type='checkbox' checked={ha} onChange={(e) => setHa(toggle)} />
+                </Form.Label>
+
+                <Form.Label htmlFor='HBP'>
+                <Form.Check inline label='High Blood Pressure' id="HBP" type='checkbox' checked={hbp} onChange={(e) => setHbp(toggle)} />
+                </Form.Label>
+                
+                <Form.Label htmlFor='OCHD'>
+                <Form.Check inline label='Other Congenital Heart Defects' id="OCHD" type='checkbox' checked={otherchd} onChange={(e) => setOtherchd(toggle)} />
+                </Form.Label><br/>
+
+                <Form.Label htmlFor='aids'>
+                <Form.Check inline label='AIDS or HIV infection' id="aids" type='checkbox' checked={aidshiv} onChange={(e) => setAidshiv(toggle)} />
+                </Form.Label>
+
+                <Form.Label htmlFor='asthma'>
+                <Form.Check inline label='Asthma' id="asthma" type='checkbox' checked={asthma} onChange={(e) => setAsthma(toggle)} />
+                </Form.Label>
+
+                <Form.Label htmlFor='stroke'>
+                <Form.Check inline label='Stroke' id="stroke" type='checkbox' checked={stroke} onChange={(e) => setStroke(toggle)} />
+                </Form.Label>
+
+                <Form.Label htmlFor='gerd'>
+                <Form.Check inline label='GERD' id="gerd" type='checkbox' checked={gerd} onChange={(e) => setGerd(toggle)} />
+                </Form.Label>
+
+                <Form.Label htmlFor='diabetes'>
+                <Form.Check inline label='Diabetes' id="diabetes" type='checkbox' checked={diabetes} onChange={(e) => setDiabetes(toggle)} />
+                </Form.Label>
+
+                <Form.Label htmlFor='seizures'>
+                <Form.Check inline label='Seizures' id="seizures" type='checkbox' checked={seizures} onChange={(e) => setSeizures(toggle)} />
+                </Form.Label>
+
+                <Form.Label htmlFor='epilepsy'>
+                <Form.Check inline label='Epilepsy' id="epilepsy" type='checkbox' checked={epilepsy} onChange={(e) => setEpilepsy(toggle)} />
+                </Form.Label><br/>
+
+                <Form.Label htmlFor='OT'>
+                <Form.Check inline label='Organ Transplants - Specify:' id="OT" type='checkbox' checked={organtrans} onChange={(e) => setOrgantrans(toggle)} />
+                <Form.Control id= "OT" type="text" onChange={(e) => setOrgantranselab(e.target.value)} value={organtranselab}/>
+                </Form.Label><br/>
+
+                <Form.Label htmlFor='smoke'>
+                <Form.Check inline label='Usage of tobacco (smoking, snuff, chew, bidis)?' id="smoke" type='checkbox' checked={tobacco} onChange={(e) => setTobacco(toggle)} />
+                </Form.Label>
+
+                <Form.Label htmlFor='CD'>
+                <Form.Check inline label='Usage of controlled substances (drugs)?' id="cd" type='checkbox' checked={controlsub} onChange={(e) => setControlsub(toggle)} />
+                </Form.Label>
+
+                <Form.Label htmlFor='alcohol'>
+                <Form.Check inline label='Drink alcoholic beverages?' id="alcohol" type='checkbox' checked={alcohol} onChange={(e) => setAlcohol(toggle)}/>
+                </Form.Label>
+                </div>
+            </Form.Group>
+
+            <h2>Dental Information</h2>
             <div>Please select the box to indicate if you HAVE had any of the following problems.</div>
+
+            <Form.Group className="mb-3" controlId="formMedicalHistory">
+                <Form.Label htmlFor='sensitive'>
+                <Form.Check inline label='Your teeth are sensitive to cold, hot, sweets, or pressure' id="sensitive" type='checkbox' checked={sensitive} onChange={(e) => setSensitive(toggle)}/>
+            </Form.Label>
+
+            <Form.Label htmlFor='dry'>
+                <Form.Check inline label='Your mouth is dry' id="dry" type='checkbox' checked={dry} onChange={(e) => setDry(toggle)} />
+                    
+            </Form.Label>
+
+            <Form.Label htmlFor='TMJ'>
+                <Form.Check inline label='You have clicking, popping, or discomfort in the jaw' id="TMJ" type='checkbox' checked={click} onChange={(e) => setClick(toggle)} />
+            </Form.Label>
+
+            <Form.Label htmlFor='grind'>
+                <Form.Check inline label='You grind your teeth' id="grind" type='checkbox' checked={brux} onChange={(e) => setBrux(toggle)} />
+            </Form.Label>
+
+            <Form.Label htmlFor='injury'>
+                <Form.Check inline label='You had a serious injury to your head or mouth' id="injury" type='checkbox' checked={serious} onChange={(e) => setSerious(toggle)} />
+            </Form.Label>
+
             <div>
-                <label htmlFor='sensitive'>
-                <input id="sensitive" type='checkbox' checked={sensitive} onChange={(e) => setSensitive(toggle)}/>
-                    Your teeth are sensitive to cold, hot, sweets, or pressure
-            </label>
-            <label htmlFor='dry'>
-                <input id="dry" type='checkbox' checked={dry} onChange={(e) => setDry(toggle)} />
-                    Your mouth is dry
-            </label>
-            <label htmlFor='TMJ'>
-                <input id="TMJ" type='checkbox' checked={click} onChange={(e) => setClick(toggle)} />
-                    You have clicking, popping, or discomfort in the jaw
-            </label>
-            <label htmlFor='grind'>
-                <input id="grind" type='checkbox' checked={brux} onChange={(e) => setBrux(toggle)} />
-                    You brux or grind your teeth
-            </label>
-            <label htmlFor='injury'>
-                <input id="injury" type='checkbox' checked={serious} onChange={(e) => setSerious(toggle)} />
-                    You had a serious injury to your head or mouth
-            </label>
-            </div>
-            <div>
-            <label htmlFor='exam'>
+            <Form.Label htmlFor='exam'>
                 Date of your last dental exam:
-                <input id="exam" type='text' onChange={(e) => setDentalexam(e.target.value)} value={dentalexam} />
+                <Form.Control id="exam" type='text' onChange={(e) => setDentalexam(e.target.value)} value={dentalexam} />
                 What was done at that time?
-                <input type='text' onChange={(e) => setExamwork(e.target.value)} value={examwork} />
-            </label>
+                <Form.Control type='text' onChange={(e) => setExamwork(e.target.value)} value={examwork} />
+            </Form.Label>
             </div>
+            </Form.Group>
             <div>
-                <button type='submit' className='submit-button'>Submit</button>
+                <Button variant="primary" type='submit' className='submit-button'>Submit</Button>
             </div> 
-        </form>
+        </Form>
     </div>
   )
 }
