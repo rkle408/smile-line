@@ -7,7 +7,7 @@ const Questions = () => {
 
     return (
         <div>    
-            <h1>Frequently Asked Dental Questions</h1><br/>
+            <h1>You have questions? We have answers!</h1><br/>
         <div>
         <Row xs={1} md={2} className="g-4">
             <Col>
@@ -49,7 +49,7 @@ const Questions = () => {
                     </Card.Body>
                 </Card>
             </Col>
-            
+
             <Col>
                 <Card border="dark">
                     <Card.Body>

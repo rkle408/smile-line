@@ -1,0 +1,21 @@
+i {
+    color: black;
+    padding: 4px;
+}
+
+.footer {
+    font-size: 20px;
+    background-color: #c19ee0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    bottom: 0;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.badge {
+    background-color: #6247aa;
+}

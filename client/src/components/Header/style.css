@@ -1,0 +1,12 @@
+.nav {
+    background-color: #dec9e9;
+}
+
+.brand {
+    font-size: 35px;
+}
+
+#navLink {
+    color: #6247aa;
+    cursor: pointer;
+}

@@ -21,10 +21,10 @@ function App() {
 
   const [pages] = useState([
     {
-      name: "Find A Dentist"
+      name: "Your Questions"
     },
     {
-      name: "Your Questions"
+      name: "Find A Dentist"
     },
     {
       name: "Health History Form"

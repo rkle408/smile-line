@@ -16,13 +16,13 @@ function Header(props) {
     }, [currentPage])
 
     return (
-    <Nav style={{backgroundColor:"lightgrey"}}>
+    <Nav className="nav">
         <Navbar>
         <Container>
-            <Navbar.Brand>Smile Line</Navbar.Brand>
+            <h1 className="brand">Smile Line</h1>
             {pages.map((page) => {
                 return (
-                <Nav.Link style={{cursor: "pointer"}} className={currentPage.name === page.name && "active"} key={page.name}>
+                <Nav.Link className={currentPage.name === page.name && "active"} key={page.name} id="navLink">
                 <span onClick={() => setCurrentPage(page)}>
                     {page.name}
                 </span></Nav.Link>
