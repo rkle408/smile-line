@@ -236,23 +236,23 @@ const Health = () => {
                 </Form.Label>
 
                 <Form.Label htmlFor='penicillin'>
-                <Form.Check label='Penicillin or other antibiotics' id="penicillin" type='checkbox' checked={penicillin} onChange={(e) => setPenicillin(toggle)}/>
+                <Form.Check inline label='Penicillin or other antibiotics' id="penicillin" type='checkbox' checked={penicillin} onChange={(e) => setPenicillin(toggle)}/>
                 </Form.Label>
 
                 <Form.Label htmlFor='barb'>
-                <Form.Check label='Barbiturates, sedatives, or sleeping pills' id="barb" type='checkbox' checked={barb} onChange={(e) => setBarb(toggle)}/>
+                <Form.Check inline label='Barbiturates, sedatives, or sleeping pills' id="barb" type='checkbox' checked={barb} onChange={(e) => setBarb(toggle)}/>
                 </Form.Label>
 
                 <Form.Label htmlFor='sulfa'>
-                <Form.Check label='Sulfa drugs' id="sulfa" type='checkbox' checked={sulfa} onChange={(e) => setSulfa(toggle)}/>
+                <Form.Check inline label='Sulfa drugs' id="sulfa" type='checkbox' checked={sulfa} onChange={(e) => setSulfa(toggle)}/>
                 </Form.Label>
 
                 <Form.Label htmlFor='codeine'>
-                <Form.Check label='Codeine or other narcotics' id="codeine" type='checkbox' checked={codeine} onChange={(e) => setCodeine(toggle)}/>
+                <Form.Check inline label='Codeine or other narcotics' id="codeine" type='checkbox' checked={codeine} onChange={(e) => setCodeine(toggle)}/>
                 </Form.Label>
 
                 <Form.Label htmlFor='latex'>
-                <Form.Check label='Latex' id="latex" type='checkbox' checked={latex} onChange={(e) => setLatex(toggle)}/>
+                <Form.Check inline label='Latex' id="latex" type='checkbox' checked={latex} onChange={(e) => setLatex(toggle)}/>
                 </Form.Label>
             </div>
 
@@ -272,72 +272,72 @@ const Health = () => {
                     Please select the box to indicate if you HAVE had any of the following diseases or problems.
                 </div>
                 <Form.Label htmlFor='CVD'>
-                <Form.Check label='Cardiovascular Disease' id="CVD" type='checkbox' checked={cvd} onChange={(e) => setCvd(toggle)} />
+                <Form.Check inline label='Cardiovascular Disease' id="CVD" type='checkbox' checked={cvd} onChange={(e) => setCvd(toggle)} />
                 </Form.Label>
 
                 <Form.Label htmlFor='CHF'>
-                <Form.Check label='Congestive Heart Failure' id="CHF" type='checkbox' checked={chf} onChange={(e) => setChf(toggle)} />
+                <Form.Check inline label='Congestive Heart Failure' id="CHF" type='checkbox' checked={chf} onChange={(e) => setChf(toggle)} />
                 </Form.Label>
 
                 <Form.Label htmlFor='DHV'>
-                <Form.Check label='Damaged Heart Valves' id="DHV" type='checkbox' checked={dhv} onChange={(e) => setDhv(toggle)}/>
+                <Form.Check inline label='Damaged Heart Valves' id="DHV" type='checkbox' checked={dhv} onChange={(e) => setDhv(toggle)}/>
                 </Form.Label>
 
                 <Form.Label htmlFor='HA'>
-                <Form.Check label='Heart Attack' id="HA" type='checkbox' checked={ha} onChange={(e) => setHa(toggle)} />
+                <Form.Check inline label='Heart Attack' id="HA" type='checkbox' checked={ha} onChange={(e) => setHa(toggle)} />
                 </Form.Label>
 
                 <Form.Label htmlFor='HBP'>
-                <Form.Check label='High Blood Pressure' id="HBP" type='checkbox' checked={hbp} onChange={(e) => setHbp(toggle)} />
+                <Form.Check inline label='High Blood Pressure' id="HBP" type='checkbox' checked={hbp} onChange={(e) => setHbp(toggle)} />
                 </Form.Label>
                 
                 <Form.Label htmlFor='OCHD'>
-                <Form.Check label='Other Congenital Heart Defects' id="OCHD" type='checkbox' checked={otherchd} onChange={(e) => setOtherchd(toggle)} />
+                <Form.Check inline label='Other Congenital Heart Defects' id="OCHD" type='checkbox' checked={otherchd} onChange={(e) => setOtherchd(toggle)} />
                 </Form.Label><br/>
 
                 <Form.Label htmlFor='aids'>
-                <Form.Check label='AIDS or HIV infection' id="aids" type='checkbox' checked={aidshiv} onChange={(e) => setAidshiv(toggle)} />
+                <Form.Check inline label='AIDS or HIV infection' id="aids" type='checkbox' checked={aidshiv} onChange={(e) => setAidshiv(toggle)} />
                 </Form.Label>
 
                 <Form.Label htmlFor='asthma'>
-                <Form.Check label='Asthma' id="asthma" type='checkbox' checked={asthma} onChange={(e) => setAsthma(toggle)} />
+                <Form.Check inline label='Asthma' id="asthma" type='checkbox' checked={asthma} onChange={(e) => setAsthma(toggle)} />
                 </Form.Label>
 
                 <Form.Label htmlFor='stroke'>
-                <Form.Check label='Stroke' id="stroke" type='checkbox' checked={stroke} onChange={(e) => setStroke(toggle)} />
+                <Form.Check inline label='Stroke' id="stroke" type='checkbox' checked={stroke} onChange={(e) => setStroke(toggle)} />
                 </Form.Label>
 
                 <Form.Label htmlFor='gerd'>
-                <Form.Check label='GERD' id="gerd" type='checkbox' checked={gerd} onChange={(e) => setGerd(toggle)} />
+                <Form.Check inline label='GERD' id="gerd" type='checkbox' checked={gerd} onChange={(e) => setGerd(toggle)} />
                 </Form.Label>
 
                 <Form.Label htmlFor='diabetes'>
-                <Form.Check label='Diabetes' id="diabetes" type='checkbox' checked={diabetes} onChange={(e) => setDiabetes(toggle)} />
+                <Form.Check inline label='Diabetes' id="diabetes" type='checkbox' checked={diabetes} onChange={(e) => setDiabetes(toggle)} />
                 </Form.Label>
 
                 <Form.Label htmlFor='seizures'>
-                <Form.Check label='Seizures' id="seizures" type='checkbox' checked={seizures} onChange={(e) => setSeizures(toggle)} />
+                <Form.Check inline label='Seizures' id="seizures" type='checkbox' checked={seizures} onChange={(e) => setSeizures(toggle)} />
                 </Form.Label>
 
                 <Form.Label htmlFor='epilepsy'>
-                <Form.Check label='Epilepsy' id="epilepsy" type='checkbox' checked={epilepsy} onChange={(e) => setEpilepsy(toggle)} />
+                <Form.Check inline label='Epilepsy' id="epilepsy" type='checkbox' checked={epilepsy} onChange={(e) => setEpilepsy(toggle)} />
                 </Form.Label><br/>
 
                 <Form.Label htmlFor='OT'>
-                <Form.Check label='Organ Transplants - Specify:' id="OT" type='checkbox' checked={organtrans} onChange={(e) => setOrgantrans(toggle)} />
+                <Form.Check inline label='Organ Transplants - Specify:' id="OT" type='checkbox' checked={organtrans} onChange={(e) => setOrgantrans(toggle)} />
                 <Form.Control id= "OT" type="text" onChange={(e) => setOrgantranselab(e.target.value)} value={organtranselab}/>
                 </Form.Label><br/>
 
                 <Form.Label htmlFor='smoke'>
-                <Form.Check label='Usage of tobacco (smoking, snuff, chew, bidis)?' id="smoke" type='checkbox' checked={tobacco} onChange={(e) => setTobacco(toggle)} />
+                <Form.Check inline label='Usage of tobacco (smoking, snuff, chew, bidis)?' id="smoke" type='checkbox' checked={tobacco} onChange={(e) => setTobacco(toggle)} />
                 </Form.Label>
 
                 <Form.Label htmlFor='CD'>
-                <Form.Check label='Usage of controlled substances (drugs)?' id="cd" type='checkbox' checked={controlsub} onChange={(e) => setControlsub(toggle)} />
+                <Form.Check inline label='Usage of controlled substances (drugs)?' id="cd" type='checkbox' checked={controlsub} onChange={(e) => setControlsub(toggle)} />
                 </Form.Label>
 
                 <Form.Label htmlFor='alcohol'>
-                <Form.Check label='Drink alcoholic beverages?' id="alcohol" type='checkbox' checked={alcohol} onChange={(e) => setAlcohol(toggle)}/>
+                <Form.Check inline label='Drink alcoholic beverages?' id="alcohol" type='checkbox' checked={alcohol} onChange={(e) => setAlcohol(toggle)}/>
                 </Form.Label>
                 </div>
             </Form.Group>
@@ -347,24 +347,24 @@ const Health = () => {
 
             <Form.Group className="mb-3" controlId="formMedicalHistory">
                 <Form.Label htmlFor='sensitive'>
-                <Form.Check label='Your teeth are sensitive to cold, hot, sweets, or pressure' id="sensitive" type='checkbox' checked={sensitive} onChange={(e) => setSensitive(toggle)}/>
+                <Form.Check inline label='Your teeth are sensitive to cold, hot, sweets, or pressure' id="sensitive" type='checkbox' checked={sensitive} onChange={(e) => setSensitive(toggle)}/>
             </Form.Label>
 
             <Form.Label htmlFor='dry'>
-                <Form.Check label='Your mouth is dry' id="dry" type='checkbox' checked={dry} onChange={(e) => setDry(toggle)} />
+                <Form.Check inline label='Your mouth is dry' id="dry" type='checkbox' checked={dry} onChange={(e) => setDry(toggle)} />
                     
             </Form.Label>
 
             <Form.Label htmlFor='TMJ'>
-                <Form.Check label='You have clicking, popping, or discomfort in the jaw' id="TMJ" type='checkbox' checked={click} onChange={(e) => setClick(toggle)} />
+                <Form.Check inline label='You have clicking, popping, or discomfort in the jaw' id="TMJ" type='checkbox' checked={click} onChange={(e) => setClick(toggle)} />
             </Form.Label>
 
             <Form.Label htmlFor='grind'>
-                <Form.Check label='You grind your teeth' id="grind" type='checkbox' checked={brux} onChange={(e) => setBrux(toggle)} />
+                <Form.Check inline label='You grind your teeth' id="grind" type='checkbox' checked={brux} onChange={(e) => setBrux(toggle)} />
             </Form.Label>
 
             <Form.Label htmlFor='injury'>
-                <Form.Check label='You had a serious injury to your head or mouth' id="injury" type='checkbox' checked={serious} onChange={(e) => setSerious(toggle)} />
+                <Form.Check inline label='You had a serious injury to your head or mouth' id="injury" type='checkbox' checked={serious} onChange={(e) => setSerious(toggle)} />
             </Form.Label>
 
             <div>
