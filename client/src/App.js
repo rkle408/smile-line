@@ -21,25 +21,25 @@ function App() {
 
   const [pages] = useState([
     {
-      name: "Contact"
+      name: "Find A Dentist"
+    },
+    {
+      name: "Your Questions"
+    },
+    {
+      name: "Health History Form"
+    },
+    // {
+    //   name: "Resources"
+    // },
+    {
+      name: "Consent Forms"
     },
     {
       name: "Fees"
     },
     {
-      name: "Find A Dentist"
-    },
-    {
-      name: "Health History Form"
-    },
-    {
-      name: "HIPAA"
-    },
-    {
-      name: "Resources"
-    },
-    {
-      name: "Questions"
+      name: "Contact Smile Line"
     }
   ]);
 

@@ -13,7 +13,7 @@ import Resources from "../../pages/Resources";
 
 function Page({ currentPage }) {
     const renderPage = () => {
-        if (currentPage.name === "Contact") {
+        if (currentPage.name === "Contact Smile Line") {
             return <Contact />
         } else if (currentPage.name === "Fees") {
             return <Fees />
@@ -21,11 +21,11 @@ function Page({ currentPage }) {
             return <Find />
         } else if (currentPage.name === "Health History Form") {
             return <Health />
-        } else if (currentPage.name === "HIPAA") {
+        } else if (currentPage.name === "Consent Forms") {
             return <HIPAA />
         } else if (currentPage.name === "Resources") {
             return <Resources />
-        } else if (currentPage.name === "Questions") {
+        } else if (currentPage.name === "Your Questions") {
             return <Questions />
         } else {
             return <Contact />

@@ -16,8 +16,8 @@ function Header(props) {
     }, [currentPage])
 
     return (
-    <Nav>
-        <Navbar style={{backgroundColor:"lightgrey"}}>
+    <Nav style={{backgroundColor:"lightgrey"}}>
+        <Navbar>
         <Container>
             <Navbar.Brand>Smile Line</Navbar.Brand>
             {pages.map((page) => {
