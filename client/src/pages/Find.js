@@ -1,10 +1,13 @@
 import React from "react";
+import Alert from 'react-bootstrap/Alert';
 
 const Find = () => {
 
     return (
         <section>
-            <h1>Find a dentist near you:</h1><br /><br />
+            <Alert variant="dark">
+                <Alert.Heading>Find a Dentist near you!</Alert.Heading>
+            </Alert><br /><br />
             <a href="https://findadentist.ada.org/dentists-catalog" target="_blank" rel="noopener noreferrer">Click here to find ADA dentists</a>
         </section>
     )
