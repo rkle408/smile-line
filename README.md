@@ -78,6 +78,7 @@ npm run start
 
 ## Resources
 
+- Fraser, Dominic. "How to keep your footer where it belongs?". <b>FreeCodeCamp</b>. <https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/>. Accessed: December 5, 2022.
 - "Big Happy Toothy Cartoon Smile". <b>goff.brian @ Vecteezy</b>. <https://www.vecteezy.com/vector-art/553849-big-happy-toothy-cartoon-smile-vector-icon>. Accessed: November 22, 2022. 
 - "Health History Form". <https://fofhealthcenter.org/files/galleries/ada_health_history_english.pdf>. Accessed: November 29, 2022.
 - "How to Consume REST APIs in React – a Beginner's Guide". <b>FreeCodeCamp</b>. <https://www.freecodecamp.org/news/how-to-consume-rest-apis-in-react/>. Accessed: December 5, 2022.
