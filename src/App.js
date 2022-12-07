@@ -116,7 +116,7 @@ function App() {
           <Route path='/authenticate' element={<Authenticate />} />
           <Route path='/checkemail' element={<CheckEmail />} />
 
-          <Route path='*' element={<Questions/>} />
+          <Route path='*' element={<Login/>} />
         </Routes>
         <Footer />
         </> 
