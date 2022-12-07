@@ -44,7 +44,8 @@
 }
 
 .findDoc {
-    background-image: url("https://findadentist.ada.org/assets/images/home-carousel/phone-dentist-map.jpg");
+    background-image: url("../assets/dentmap.jpg");
+    background-repeat:no-repeat;
 }
 
 .contactTitle {
