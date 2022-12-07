@@ -8,6 +8,7 @@ import Questions from "../../pages/Questions"
 import PageContent from "../PageContent";
 import Find from "../../pages/Find";
 import Resources from "../../pages/Resources";
+import Terms from "../../pages/Terms";
 
 
 
@@ -25,6 +26,8 @@ function Page({ currentPage }) {
             return <HIPAA />
         } else if (currentPage.name === "Resources") {
             return <Resources />
+        } else if (currentPage.name === "Translate Dental Terms") {
+            return <Terms />
         } else if (currentPage.name === "Your Questions") {
             return <Questions />
         } else {

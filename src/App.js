@@ -70,8 +70,8 @@ function App() {
           <Route path='/fees' element={<Fees />} />
           <Route path='/health' element={<Health />} />
           <Route path='/HIPAA' element={<HIPAA />} />
-          <Route path='/questions' element={<Questions />} />
           <Route path='/terms' element={<Terms />} />
+          <Route path='/questions' element={<Questions />} />
           {/* <Route path='/resources' element={
             <PrivateRoute>
               <Resources />

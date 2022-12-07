@@ -23,12 +23,13 @@ import './Navigation.css';
                 <h1 className="brand">SmileLine</h1>
             </div>
             
-                <NavLink to='/questions' className="navlink">Your Questions</NavLink>
-                <NavLink to='/find' className="navlink">Find A Dentiist</NavLink>
-                <NavLink to='/health' className="navlink">Health History Form</NavLink>
-                <NavLink to='/HIPAA' className="navlink">Consent Forms</NavLink>
-                <NavLink to='/fees' className="navlink">Dental Fees</NavLink>
-                <NavLink to='/contact' className="navlink">Contact SmileLine</NavLink>
+                <NavLink to='/questions' className="navlink" style={{color:"#6247aa"}}>Your Questions</NavLink>
+                <NavLink to='/terms' className="navlink" style={{color:"#6247aa"}}>Translate: Dental Terms</NavLink>
+                <NavLink to='/find' className="navlink" style={{color:"#6247aa"}}>Find A Dentist</NavLink>
+                <NavLink to='/health' className="navlink" style={{color:"#6247aa"}}>Health History Form</NavLink>
+                <NavLink to='/HIPAA' className="navlink" style={{color:"#6247aa"}}>Consent Forms</NavLink>
+                <NavLink to='/fees' className="navlink" style={{color:"#6247aa"}}>Dental Fees</NavLink>
+                <NavLink to='/contact' className="navlink" style={{color:"#6247aa"}}>Contact SmileLine</NavLink>
                 {/* <div> <NavLink to='/login'>Login</NavLink></div> */}
                 {/* <div className="button"> <button onClick={handleLogout}>Logout</button> </div> */}
             
