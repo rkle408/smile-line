@@ -74,7 +74,7 @@ const Questions = () => {
                             Brushing will miss the areas in between your teeth! And it's definitely not going to get out that piece of garlic lodged into your gums!<br/>
                             It'll help to remove plaque/build up and bacteria that you can't see or feel. Removing the plaque with floss will help to remove the bacteria that causes swollen and bleeding gums!<br/><br/>
                             <hr />
-                            <Card.Link className="link" href="https://www.youtube.com/watch?v=CBd_2Dk0Svw">Click here to see a video on proper flossing!</Card.Link>
+                            <Card.Link className="link" href="https://www.youtube.com/watch?v=WviE5aa5Ha0" target="_blank">Click here to see a video on proper flossing!</Card.Link>
                         </Card.Text>
                     </Card.Body>
                 </Card>
