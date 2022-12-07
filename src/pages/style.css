@@ -43,6 +43,10 @@
 
 }
 
+.findDoc {
+    background-image: url("https://findadentist.ada.org/assets/images/home-carousel/phone-dentist-map.jpg");
+}
+
 .contactTitle {
     text-align: center;
 }
