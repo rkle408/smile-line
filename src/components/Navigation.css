@@ -21,6 +21,10 @@ nav {
     color:#6247aa;
 }
 
+.navlink {
+    color:#6247aa;
+    text-decoration: none;
+}
 
 .button {
     margin-left: 1px;
