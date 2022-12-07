@@ -18,10 +18,12 @@ import './Navigation.css';
     //   }, [client])
 
     return ( 
-        <nav>
-            <div>
+        <div>
+            <div className="brand">
                 <h1 className="brand">SmileLine</h1>
             </div>
+            <nav>
+            
             
                 <NavLink to='/questions' className="navlink" style={{color:"#6247aa"}}>Your Questions</NavLink>
                 <NavLink to='/terms' className="navlink" style={{color:"#6247aa"}}>Translate: Dental Terms</NavLink>
@@ -33,7 +35,8 @@ import './Navigation.css';
                 {/* <div> <NavLink to='/login'>Login</NavLink></div> */}
                 {/* <div className="button"> <button onClick={handleLogout}>Logout</button> </div> */}
             
-        </nav>
+            </nav>
+        </div>
     )
 };
 
