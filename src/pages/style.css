@@ -1,5 +1,6 @@
 
-.title {
+.title,
+.contactTitle {
     font-size: 40px;
     font-family: 'Montserrat Alternates', sans-serif;
     /* font-family: 'Shadows Into Light', cursive; */
@@ -44,7 +45,8 @@
 }
 
 .findDoc {
-    background-image: url("https://findadentist.ada.org/assets/images/home-carousel/phone-dentist-map.jpg");
+    background-image: url("../assets/dentmap.jpg");
+    background-repeat:no-repeat;
 }
 
 .contactTitle {
