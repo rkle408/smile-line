@@ -76,3 +76,7 @@ input[type="submit"]:hover {
 	background-color: #fff;
 	color: #6b55a9;
 }
+
+.login {
+	min-height: 80vh;
+}
