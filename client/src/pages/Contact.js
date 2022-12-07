@@ -59,7 +59,7 @@ function Contact (){
 
     return (
         <section className="contact">
-            <h1 className="title">Contact Smile Line!</h1>
+            <h1 className="contactTitle">Contact Smile Line!</h1>
             <form ref={form} id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <Form.Label htmlFor="name">Name: </Form.Label><br/>
@@ -79,7 +79,7 @@ function Contact (){
                     </div>
                 )}
                 <br/>
-                <Button variant="primary" className="submitBtn" type="submit">Submit</Button>
+                <Button style={{backgroundColor: '#6247aa'}} className="submit" type="submit">Submit</Button>
             </form>
         </section>
     )

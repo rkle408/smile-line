@@ -172,7 +172,7 @@ const Health = () => {
     }
 
   return (
-    <div>
+    <div className='hhf'>
         <Form autoComplete='off' className='HealthForm' onSubmit={handleForm}>
             <h1 className="title">Health History Form</h1>
                 <Form.Group className="mb-3" controlId="formBasicInfo">
@@ -378,7 +378,7 @@ const Health = () => {
             </div>
             </Form.Group>
             <div>
-                <Button variant="primary" type='submit' className='submit-button'>Submit</Button>
+                <Button style={{backgroundColor: '#6247aa'}} type='submit' className='submit'>Submit</Button>
             </div> 
         </Form>
     </div>

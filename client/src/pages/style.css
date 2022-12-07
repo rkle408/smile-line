@@ -1,3 +1,4 @@
+
 .title {
     font-size: 40px;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -12,4 +13,45 @@
 
 .link:hover {
     color: #86bbd8;
+}
+
+.checkEmail, .authenticating {
+   text-align: center;
+
+}
+.sent{
+    font-weight: 800;
+}
+.directions {
+    font-size: 22px;
+}
+
+.hipaa,
+.findDoc {
+    text-align: center;
+}
+
+.questions,
+.fees,
+.hipaa {
+    margin: 0 5rem;
+}
+
+.contactTitle {
+    text-align: center;
+}
+
+.submit:hover,
+.feeBtn:hover {
+    background-color: white !important;
+    color: #6247aa !important;
+}
+
+.hhf,
+.questions,
+.findDoc,
+.hipaa,
+.fees,
+.contact{
+    min-height: 80vh;
 }
