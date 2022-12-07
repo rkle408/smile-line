@@ -22,9 +22,8 @@ import './Navigation.css';
             <div>
                 <h1 className="brand">SmileLine</h1>
             </div>
-            
                 <NavLink to='/questions' className="navlink">Your Questions</NavLink>
-                <NavLink to='/find' className="navlink">Find A Dentiist</NavLink>
+                <NavLink to='/find' className="navlink">Find A Dentist</NavLink>
                 <NavLink to='/health' className="navlink">Health History Form</NavLink>
                 <NavLink to='/HIPAA' className="navlink">Consent Forms</NavLink>
                 <NavLink to='/fees' className="navlink">Dental Fees</NavLink>
