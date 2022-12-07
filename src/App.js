@@ -17,6 +17,7 @@ import Find from './pages/Find';
 // import CheckEmail from './pages/CheckEmail';
 // import PrivateRoute from './components/PrivateRoute';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Terms from './pages/Terms';
 
 
 function App() {
@@ -70,6 +71,7 @@ function App() {
           <Route path='/health' element={<Health />} />
           <Route path='/HIPAA' element={<HIPAA />} />
           <Route path='/questions' element={<Questions />} />
+          <Route path='/terms' element={<Terms />} />
           {/* <Route path='/resources' element={
             <PrivateRoute>
               <Resources />

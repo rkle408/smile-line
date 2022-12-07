@@ -33,7 +33,8 @@
 
 .questions,
 .fees,
-.hipaa {
+.hipaa,
+.terms {
     margin: 0 5rem;
 }
 
@@ -52,6 +53,7 @@
 .findDoc,
 .hipaa,
 .fees,
-.contact{
+.contact,
+.terms {
     min-height: 80vh;
 }
