@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f5013c63.css",
+    "main.js": "/static/js/main.cda1226c.js",
+    "static/js/787.cc0d9c3f.chunk.js": "/static/js/787.cc0d9c3f.chunk.js",
+    "static/media/HIPAA_Consent_Form.png": "/static/media/HIPAA_Consent_Form.6fea01f3cb5680aea9ba.png",
+    "static/media/Consent_Form.png": "/static/media/Consent_Form.6e4dd3710910a7af7c04.png",
+    "index.html": "/index.html",
+    "main.f5013c63.css.map": "/static/css/main.f5013c63.css.map",
+    "main.cda1226c.js.map": "/static/js/main.cda1226c.js.map",
+    "787.cc0d9c3f.chunk.js.map": "/static/js/787.cc0d9c3f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5013c63.css",
+    "static/js/main.cda1226c.js"
+  ]
+}
