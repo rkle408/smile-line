@@ -16,6 +16,7 @@ const Terms = () => {
             <Card>
                 <Card.Header  as="h5">Caries</Card.Header>
                 <Card.Body>
+                    <img className="termImg" alt="Illustration about dental decay" src={caries} style={{height:"50%", width:"50%"}}/><br/><br/>
                     <blockquote className="blockquote mb-0">
                         <p>
                             {' '}
@@ -38,8 +39,6 @@ const Terms = () => {
                             Someone famous in <cite title="Source Title">Source Title</cite>
                         </footer> */}
                     </blockquote>
-                    <br/>
-                    <Card.Img variant="bottom" alt="Illustration about dental decay" src={caries} style={{height:"50%", width:"50%"}}/>
                 </Card.Body>
             </Card>
             <br/>
@@ -47,6 +46,7 @@ const Terms = () => {
             <Card>
                 <Card.Header as="h5">Plaque</Card.Header>
                 <Card.Body>
+                    <img className="termImg" alt="Illustration comparing plaque and tartar" src={plaquecalc}/><br/><br/>
                     <blockquote className="blockquote mb-0">
                         <p>
                             {' '}
@@ -66,8 +66,6 @@ const Terms = () => {
                             Someone famous in <cite title="Source Title">Source Title</cite>
                         </footer> */}
                     </blockquote>
-                    <br/>
-                    <Card.Img variant="bottom" alt="Illustration comparing plaque and tartar" src={plaquecalc} style={{height:"50%", width:"50%"}}/>
                 </Card.Body>
             </Card>
             <br/>
@@ -75,6 +73,7 @@ const Terms = () => {
             <Card>
                 <Card.Header as="h5">Calculus</Card.Header>
                 <Card.Body>
+                    <img className="termImg" alt="Calculus on teeth and after it is removed" src={calculus}/><br/><br/>
                     <blockquote className="blockquote mb-0">
                         <p>
                             {' '}
@@ -91,8 +90,6 @@ const Terms = () => {
                             {' '}
                         </p>
                     </blockquote>
-                    <br/>
-                    <Card.Img variant="bottom" alt="Image of calculus on teeth and after it is removed" src={calculus} style={{height:"50%", width:"50%"}}/>
                 </Card.Body>
             </Card>
             <br/>
@@ -100,6 +97,7 @@ const Terms = () => {
             <Card>
                 <Card.Header as="h5">Gum Disease: Gingivitis, Periodontitis</Card.Header>
                 <Card.Body>
+                    <img className="termImg" alt="Illustration of stages of gum disease" src={perio}/><br/><br/>
                     <blockquote className="blockquote mb-0">
                         <p>
                             {' '}
@@ -110,12 +108,9 @@ const Terms = () => {
                             <br/><br/>
 
                             <b>Periodontitis</b> - this is when you have BOTH unhealthy gums AND the bone surrounding your teeth! At this stage, your gums and bone have started shrinking. This one is a very big deal! If you don't brush and floss regulary, or go to the dentist 2 times a year, you will likely get food that's really stuck deep in between the gums, and hard plaque that starts to make the bone sick. At this stage, you will hear us talking about "pockets," which is just the space between your tooth and gums -- deep pockets are bad because that means the bone is moving away from your teeth! <i>Your teeth may start to get loose</i>, and may need to be taken out if you do not get regular care possibly every 3 months! <i>Infection can also spread under the teeth</i>!
-
                             {' '}
                         </p>
                     </blockquote>
-                    <br/>
-                    <Card.Img variant="bottom" alt="Illustration of stages of gum disease" src={perio} style={{height:"50%", width:"50%"}}/>
                 </Card.Body>
             </Card>
             <br/>
@@ -123,6 +118,7 @@ const Terms = () => {
             <Card>
                 <Card.Header as="h5">Filling</Card.Header>
                 <Card.Body>
+                    <img className="termImg" alt="Illustration of a filling" src={filling}/><br/><br/>
                     <blockquote className="blockquote mb-0">
                         <p>
                             {' '}
@@ -134,8 +130,6 @@ const Terms = () => {
                             {' '}
                         </p>
                     </blockquote>
-                    <br/>
-                    <Card.Img variant="bottom" alt="Illustration of a filling" src={filling} style={{height:"50%", width:"50%"}}/>
                 </Card.Body>
             </Card>
             <br/>
@@ -143,6 +137,7 @@ const Terms = () => {
             <Card>
                 <Card.Header as="h5">Crown</Card.Header>
                 <Card.Body>
+                    <img className="termImg" alt="Illustration about dental decay" src={crown}/><br/><br/>
                     <blockquote className="blockquote mb-0">
                         <p>
                             {' '}
@@ -156,8 +151,6 @@ const Terms = () => {
                             {' '}
                         </p>
                     </blockquote>
-                    <br/>
-                    <Card.Img variant="bottom" alt="Illustration about dental decay" src={crown} style={{height:"50%", width:"50%"}}/>
                 </Card.Body>
             </Card>
             <br/>
