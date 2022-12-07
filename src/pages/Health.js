@@ -174,21 +174,21 @@ const Health = () => {
   return (
     <div className='hhf'>
         <Form autoComplete='off' className='HealthForm' onSubmit={handleForm}>
-            <h1 className="title">Health History Form</h1>
-                <Form.Group className="mb-3" controlId="formBasicInfo">
+            <h1 className="title" >Health History Form</h1>
+                <Form.Group className="mb-3">
                 <Row className="mb-3">
                 <Col>
-                    <Form.Label htmlFor='last'>
+                    <Form.Label style={{fontWeight: 'bold'}} htmlFor='last'>
                         Last name: <Form.Control id='last' type='text' onChange={(e) => setLastname(e.target.value)} value={lastname} />
                     </Form.Label>   
                 </Col>
                 <Col>
-                    <Form.Label htmlFor='first'>
+                    <Form.Label style={{fontWeight: 'bold'}} htmlFor='first'>
                         First name: <Form.Control id='first' type='text' onChange={(e) => setFirstname(e.target.value)} value={firstname} />
                     </Form.Label>   
                 </Col>
                 <Col>
-                    <Form.Label htmlFor='middle'>
+                    <Form.Label style={{fontWeight: 'bold'}} htmlFor='middle'>
                        Middle initial: <Form.Control id='middle' type='text' onChange={(e) => setMiddleinitial(e.target.value)} value={middleinitial} />
                     </Form.Label>  
                 </Col>
@@ -197,37 +197,37 @@ const Health = () => {
              
                 <Row className="mb-3">
                 <Col>
-                <Form.Label htmlFor='dob'>
+                <Form.Label style={{fontWeight: 'bold'}} htmlFor='dob'>
                     Date of Birth: <Form.Control id='dob' type='text' onChange={(e) => setBirthday(e.target.value)} value={birthday} />
                 </Form.Label> 
                 </Col>
 
                 <Col>
-                <Form.Label htmlFor='number'>
+                <Form.Label style={{fontWeight: 'bold'}} htmlFor='number'>
                     Phone #: <Form.Control id='number' type='text' onChange={(e) => setPhone(e.target.value)} value={phonenumber}  />
                 </Form.Label>
                 </Col>
 
                 <Col>
-                <Form.Label htmlFor='address'>
+                <Form.Label style={{fontWeight: 'bold'}} htmlFor='address'>
                     Address: <Form.Control id='address' type='text' onChange={(e) => setAddress(e.target.value)} value={address}  />
                 </Form.Label>
                 </Col>
 
                 <Col>
-                <Form.Label htmlFor='email'>
+                <Form.Label style={{fontWeight: 'bold'}} htmlFor='email'>
                     Email: <Form.Control id='email' type='email' placeholder="name@example.com" onChange={(e) => setEmail(e.target.value)} value={email}  />
                 </Form.Label>
                 </Col>
                 </Row>
 
             <h2>Medical Information</h2>
-            <Form.Group className="mb-3" controlId="formMedicalHistory">
-                <Form.Label htmlFor="meds">Are you or have you recently taken any prescription or over the counter medicine(s)? <br/>If so, please list all, including vitamins, natural or herbal preparations and/or dietary supplements: </Form.Label>
+            <Form.Group className="mb-3">
+                <Form.Label style={{fontWeight: 'bold'}} htmlFor="meds">Are you or have you recently taken any prescription or over the counter medicine(s)? <br/>If so, please list all, including vitamins, natural or herbal preparations and/or dietary supplements: </Form.Label>
                 <Form.Control id="meds" type="text" onChange={(e) => setMeds(e.target.value)} value={medications}/><br/>
             
             <div>
-                <p className="mb-3">Are you allergic to or have you had a reaction to:</p>
+                <p className="mb-3" style={{fontWeight: 'bold'}}>Are you allergic to or have you had a reaction to:</p>
                 <Form.Label htmlFor='LA'>
                 <Form.Check inline id="LA" type='checkbox' label='Local Anesthetics' checked={localAnesthetic} onChange={(e) => setLa(toggle)} />
                 </Form.Label>
@@ -258,18 +258,18 @@ const Health = () => {
             </div>
 
             <div className="mb-3">
-                <p>Have you had an orthopedic total joint (hip, knee, elbow, finger) replacement? <br/>
+                <p style={{fontWeight: 'bold'}}>Have you had an orthopedic total joint (hip, knee, elbow, finger) replacement? <br/>
                 <Form.Label htmlFor='tjr'> If yes, please provide the date and any complications: <Form.Control id="tjr" type="text" onChange={(e) => setOrthoJointReplacement(e.target.value)} value={orthojointreplacement}/> </Form.Label></p>
             </div>
 
             <div className="mb-3">
                 <Form.Label htmlFor='bis'>
-                <Form.Check label="Check this box if you are taking or scheduled to begin taking an antiresorptive agent (like Fosamax®, Actonel®, Atelvia, Boniva®, Reclast, Prolia) for osteoporosis or Paget's disease" id="bis" type='checkbox' checked={antiresorptive} onChange={(e) => setAntiresorptive(toggle)}/>
+                <Form.Check style={{fontWeight: 'bold'}} label="Check this box if you are taking or scheduled to begin taking an antiresorptive agent (like Fosamax®, Actonel®, Atelvia, Boniva®, Reclast, Prolia) for osteoporosis or Paget's disease" id="bis" type='checkbox' checked={antiresorptive} onChange={(e) => setAntiresorptive(toggle)}/>
                 </Form.Label>
             </div>
 
             <div>
-                <div>
+                <div style={{fontWeight: 'bold'}}>
                     Please select the box to indicate if you HAVE had any of the following diseases or problems.
                 </div>
                 <Form.Label htmlFor='CVD'>
@@ -344,9 +344,9 @@ const Health = () => {
             </Form.Group>
 
             <h2>Dental Information</h2>
-            <div>Please select the box to indicate if you HAVE had any of the following problems.</div>
+            <div style={{fontWeight: 'bold'}}>Please select the box to indicate if you HAVE had any of the following problems.</div>
 
-            <Form.Group className="mb-3" controlId="formMedicalHistory">
+            <Form.Group className="mb-3">
                 <Form.Label htmlFor='sensitive'>
                 <Form.Check inline label='Your teeth are sensitive to cold, hot, sweets, or pressure' id="sensitive" type='checkbox' checked={sensitive} onChange={(e) => setSensitive(toggle)}/>
             </Form.Label>
@@ -369,7 +369,7 @@ const Health = () => {
             </Form.Label>
 
             <div>
-            <Form.Label htmlFor='exam'>
+            <Form.Label style={{fontWeight: 'bold'}} htmlFor='exam'>
                 Date of your last dental exam:
                 <Form.Control id="exam" type='text' onChange={(e) => setDentalexam(e.target.value)} value={dentalexam} />
                 What was done at that time?
