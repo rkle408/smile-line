@@ -14,15 +14,13 @@
     color: #ff87ab;
 }
 
-nav {
+.nav {
     font-size: 20px;
     color: #6247aa;
     cursor: pointer;
     background-color: #dec9e9;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px 10px 20px;
+    
 }
 
 .navlink {
