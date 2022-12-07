@@ -24,7 +24,7 @@ const Authenticate = () => {
   },[client, session])
 
   return (
-    <div className='authenticating'>
+    <div className='authenticating' style={{minHeight: '80vh'}}>
       <h2>Authenticating in progress... Thank you for waiting</h2>
       </div>
   )

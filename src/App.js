@@ -1,7 +1,6 @@
 import './App.css';
-import React, { useCallback } from "react";
-import { Routes, Route, useNavigate } from 'react-router-dom';
-import { useStytch } from '@stytch/stytch-react';
+import React from "react";
+import { Routes, Route} from 'react-router-dom';
 // import Header from "./components/Header";
 // import Page from "./components/Page";
 import Footer from "./components/Footer";
@@ -21,21 +20,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
-  const client = useStytch();
-  const navigate = useNavigate();
   
-  const handleLogin = async (email) => {
-    await client.magicLinks.email.loginOrCreate(email)
-
-    navigate('/checkemail');
-  }
-
-  const handleLogout = useCallback(async () => {
-    await client.session.revoke();
-    alert('You are now logged out!');
-    navigate('/login');
-  }, [client])
-
   // const [pages] = useState([
   //   {
   //     name: "Your Questions"
@@ -74,7 +59,7 @@ function App() {
           </main>
         </div> */}
   
-        <Navigation handleLogout={handleLogout} />
+        <Navigation />
 
         <Routes>
           <Route index path='/find' element={
@@ -82,7 +67,7 @@ function App() {
             <Find />
           </PrivateRoute>
           } />
-          <Route path='/login' element={<Login handleLogin={handleLogin} />} />
+          <Route path='/login' element={<Login />} />
           <Route path='/contact' element={
             <PrivateRoute>
               <Contact />

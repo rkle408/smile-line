@@ -1,9 +1,21 @@
-import { NavLink } from "react-router-dom";
-import { useStytchSession } from '@stytch/stytch-react';
+import { NavLink, useNavigate } from "react-router-dom";
+import React, { useCallback } from 'react';
+import { useStytchSession, useStytch } from '@stytch/stytch-react';
+
+
 import './Navigation.css';
 
-export default ({ handleLogout }) => {
-    const session = useStytchSession()
+export default () => {
+    const session = useStytchSession();
+    const client = useStytch();
+    const navigate = useNavigate();
+
+    const handleLogout = useCallback(async () => {
+        await client.session.revoke();
+        alert('You are now logged out!');
+        navigate('/login');
+      }, [client])
+
 
     return (
         <nav>
