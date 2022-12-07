@@ -6,8 +6,8 @@ import "./style.css";
 
 const HIPAA = () => {
 
-    const downloadFile = () => {
-        window.location.href = "https://docs.google.com/document/d/1bHAw7sAaak70oSj7hMnX4vJ8vwJ34MuAc-zigLyF9Pc/edit?usp=sharing"
+    const openFile = () => {
+        window.open("https://docs.google.com/document/d/1bHAw7sAaak70oSj7hMnX4vJ8vwJ34MuAc-zigLyF9Pc/edit?usp=sharing")
       }
 
   return (
@@ -17,7 +17,7 @@ const HIPAA = () => {
       <p>In order to help you prepare and save time, here are some examples of what those forms may look like. Read through, and make notes if you have questions for your dentist!</p><br/>
         <img src={HIPAAForm} alt="Screenshot of HIPAA form" style={{border: "2px solid black", borderRadius: "10px"}}></img>
         <img src={ConsentForm} alt="Screenshot of Consent" style={{border: "2px solid black", borderRadius: "10px"}}></img><br/><br/>
-        <Button className='submit' style={{backgroundColor: '#6247aa'}} onClick={downloadFile} target="_blank">View HIPAA and Procedure Consent Forms</Button><br/>
+        <Button className='submit' style={{backgroundColor: '#6247aa'}} onClick={openFile} target="_blank">View HIPAA and Procedure Consent Forms</Button><br/>
     </div>
   )
 }
