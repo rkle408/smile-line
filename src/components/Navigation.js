@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom"; //removed useNavigate
 import React from 'react'; //removed useCallBack
-import { Navbar, Nav, Container } from 'react-bootstrap';
 // import { useStytchSession, useStytch } from '@stytch/stytch-react';
 
 
