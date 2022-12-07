@@ -1,10 +1,10 @@
-import { Navigate } from "react-router-dom";
-import { useStytchSession } from "@stytch/stytch-react";
+// import { Navigate } from "react-router-dom";
+// import { useStytchSession } from "@stytch/stytch-react";
 
-export default ({ children }) => {
-    const session = useStytchSession();
+// export default ({ children }) => {
+//     const session = useStytchSession();
 
-    if(!session) return <Navigate to='/login' replace />
+//     if(!session) return <Navigate to='/login' replace />
 
-    return children;
-}
+//     return children;
+// }

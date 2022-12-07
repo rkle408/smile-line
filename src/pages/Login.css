@@ -1,4 +1,4 @@
-* {
+/* * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -7,8 +7,6 @@
 
 form, h3 {
 	text-align: center;
-	/* background-color: #1f2430;
-	color: #fff; */
 }
 
 nav {
@@ -79,4 +77,4 @@ input[type="submit"]:hover {
 
 .login {
 	min-height: 80vh;
-}
+} */
