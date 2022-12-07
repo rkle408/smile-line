@@ -19,6 +19,8 @@ import Find from './pages/Find';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Terms from './pages/Terms';
 
+import  { BreakpointProvider } from 'react-socks';
+
 
 function App() {
   
@@ -48,8 +50,8 @@ function App() {
 
   // const [currentPage, setCurrentPage] = useState(pages[0]);
 
-  return (<>
-    
+  return (
+    <div>
         {/* <div >
           <Header pages={pages} setCurrentPage={setCurrentPage} currentPage={currentPage} />
           <main className='pageContainer'>
@@ -59,7 +61,7 @@ function App() {
             <Footer className='footer'/>
           </main>
         </div> */}
-  
+      <BreakpointProvider>
         <Navigation />
 
         {/* Deleted PrivateRoute from elements in route  */}
@@ -82,9 +84,9 @@ function App() {
 
           <Route path='*' element={<Questions />} />
         </Routes>
-        <Footer />
-        </> 
-        
+          <Footer />
+        </BreakpointProvider>
+    </div>
   );
 }
 

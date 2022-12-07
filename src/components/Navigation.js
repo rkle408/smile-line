@@ -22,7 +22,7 @@ import './Navigation.css';
             <div className="brand">
                 <h1 className="brand">SmileLine</h1>
             </div>
-            <nav>
+            <nav style={{display: "flex", flexWrap: "wrap", gap: "50px"}}>
             
             
                 <NavLink to='/questions' className="navlink" style={{color:"#6247aa"}}>Your Questions</NavLink>
