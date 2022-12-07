@@ -6,6 +6,7 @@ import plaquecalc from '../assets/plaquecalc.png';
 import calculus from '../assets/calculus.png';
 import perio from '../assets/perio.jpg';
 import filling from '../assets/filling.jpg';
+import crown from '../assets/crown.jpg';
 
 const Terms = () => {
 
@@ -135,6 +136,28 @@ const Terms = () => {
                     </blockquote>
                     <br/>
                     <Card.Img variant="bottom" alt="Illustration of a filling" src={filling} style={{height:"50%", width:"50%"}}/>
+                </Card.Body>
+            </Card>
+            <br/>
+
+            <Card>
+                <Card.Header as="h5">Crown</Card.Header>
+                <Card.Body>
+                    <blockquote className="blockquote mb-0">
+                        <p>
+                            {' '}
+                            A crown is a <b>complete cover</b> for your tooth. A crown is usually needed when your tooth is broken, a cavity is too big for a filling, or you had a root canal done on that tooth.
+                            <br/><br/>
+
+                            A crown can be made of porcelain/ceramic, porcelain and metal, or metal. These different options usually come at different prices. 
+                            <br/><br/>
+                            
+                            Crowns usually have to be sent out to a lab to be made, so you'll go home from your appointment with a temporary crown, and you'll come back to have the permanent crown placed after it comes back from the lab. With new technology, some dental offices have a machine that makes a crown in the office, so you can have it placed the same day. Note: These same-day crowns are convenient, but aren't always the best choice for every patient, tooth, or doctor, so make sure you ask a lot of questions.
+                            {' '}
+                        </p>
+                    </blockquote>
+                    <br/>
+                    <Card.Img variant="bottom" alt="Illustration about dental decay" src={crown} style={{height:"50%", width:"50%"}}/>
                 </Card.Body>
             </Card>
             <br/>
