@@ -116,7 +116,7 @@ function App() {
           <Route path='/authenticate' element={<Authenticate />} />
           <Route path='/checkemail' element={<CheckEmail />} />
 
-          <Route path='*' element={<p>404 We could not find the page you're looking for!</p>} />
+          <Route path='*' element={<Questions/>} />
         </Routes>
         <Footer />
         </> 

@@ -14,7 +14,7 @@ const Login = ({ handleLogin }) => {
     
   }
   return (
-    <div>
+    <div className='login'>
       <h3>Please Login/SignUp!</h3>
       <form className='loginForm' onSubmit={handleSubmit}>
         <input type='email' name='email' id='' placeholder='e.g. sample@email.com' />
