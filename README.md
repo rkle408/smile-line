@@ -79,12 +79,17 @@ npm run start
 ## Resources
 
 - Fraser, Dominic. "How to keep your footer where it belongs?". <b>FreeCodeCamp</b>. <https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/>. Accessed: December 5, 2022.
+- DiFoggio, Whitney. "How To Remove PLAQUE vs. TARTAR". <b>teethtalkgirl</b>. <https://www.teethtalkgirl.com/dental-health/how-to-remove-plaque-versus-tartar>. Accessed: December 7, 2022.
+- Meola, John. "The Stages of Gum Disease: Gingivitis and Periodontitis". <b>Dental Associates of New England</b>. <https://www.bostonsmile.com/blog/2017/08/04/the-stages-of-gum-disease-185121>. Accessed: December 7, 2022.
+- Sung, Charlie. "Are Dental Caries and Cavities the Same Thing?" <b>Choice Dental</b>. <https://www.choice-dental.com.au/are-dental-caries-and-cavities-the-same-thing/>. Accessed: December 6, 2022.
 - "Big Happy Toothy Cartoon Smile". <b>goff.brian @ Vecteezy</b>. <https://www.vecteezy.com/vector-art/553849-big-happy-toothy-cartoon-smile-vector-icon>. Accessed: November 22, 2022. 
+- "Dental cartoon Step of restoring cavity tooth by filling tooth". <b>Paladjai from iStock</b>. <https://www.istockphoto.com/vector/dental-cartoon-step-of-restoring-cavity-tooth-by-filling-tooth-illustration-cartoon-gm1313720181-402148711>. Accessed: December 7, 2022.
 - "Health History Form". <https://fofhealthcenter.org/files/galleries/ada_health_history_english.pdf>. Accessed: November 29, 2022.
 - "How to Consume REST APIs in React – a Beginner's Guide". <b>FreeCodeCamp</b>. <https://www.freecodecamp.org/news/how-to-consume-rest-apis-in-react/>. Accessed: December 5, 2022.
 - "Patient HIPAA Consent Form". <b>Dr. Daniel Dowdle</b>. <https://www.rosecreekdental.com/forms/Consent_and_HIPPA.pdf>. Accessed: December 1, 2022.
 - "React Bootstrap". <b>React Bootstrap</b>. <https://react-bootstrap.netlify.app/>. Accessed: December 5, 2022.
 - "Set Up with React". <b>fontawesome</b>. <https://fontawesome.com/v6/docs/web/use-with/react/>. Accessed: December 5, 2022.
+- "What's the Deal with Dental Plaque?" <b>Star Image Dentistry</b>. <https://www.starimagedentistry.com/blog/dental-plaque-and-tartar-causes-prevention-and-removal/>. Accessed: December 7, 2022.
 - "Understanding costs in advance". <b>CMS.gov</b>. <https://www.cms.gov/nosurprises/consumers/understanding-costs-in-advance>. Accessed: November 30, 2022.
 
 ## License
