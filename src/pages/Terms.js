@@ -149,10 +149,10 @@ const Terms = () => {
                             A crown is a <b>complete cover</b> for your tooth. A crown is usually needed when your tooth is broken, a cavity is too big for a filling, or you had a root canal done on that tooth.
                             <br/><br/>
 
-                            A crown can be made of porcelain/ceramic, porcelain and metal, or metal. These different options usually come at different prices. 
+                            A crown can be made of porcelain/ceramic, porcelain and metal, or just metal. These different options usually come at different prices. 
                             <br/><br/>
                             
-                            Crowns usually have to be sent out to a lab to be made, so you'll go home from your appointment with a temporary crown, and you'll come back to have the permanent crown placed after it comes back from the lab. With new technology, some dental offices have a machine that makes a crown in the office, so you can have it placed the same day. Note: These same-day crowns are convenient, but aren't always the best choice for every patient, tooth, or doctor, so make sure you ask a lot of questions.
+                            Crowns usually have to be sent out to a lab to be made, so you'll go home from your appointment with a temporary crown, and you'll come back to have the permanent crown placed after it comes back from the lab. With new technology, some dental offices have a machine that makes a crown in the office, so you can have it placed the same day. Note: These same-day crowns are convenient, but aren't always the best choice for every patient, tooth, or doctor, so make sure you talk to your dentist to find the best choice for you.
                             {' '}
                         </p>
                     </blockquote>
