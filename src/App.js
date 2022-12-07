@@ -19,8 +19,6 @@ import Find from './pages/Find';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Terms from './pages/Terms';
 
-import  { BreakpointProvider } from 'react-socks';
-
 
 function App() {
   
@@ -61,7 +59,6 @@ function App() {
             <Footer className='footer'/>
           </main>
         </div> */}
-      <BreakpointProvider>
         <Navigation />
 
         {/* Deleted PrivateRoute from elements in route  */}
@@ -84,8 +81,7 @@ function App() {
 
           <Route path='*' element={<Questions />} />
         </Routes>
-          <Footer />
-        </BreakpointProvider>
+        <Footer />
     </div>
   );
 }
