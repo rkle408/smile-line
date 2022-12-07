@@ -33,8 +33,10 @@
 
 .questions,
 .fees,
-.hipaa {
-    margin: 0 5rem;
+.hipaa, 
+.hhf,
+.contact{
+    margin: 5rem;
 }
 
 .contactTitle {

@@ -13,18 +13,12 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 8px;
+    padding-right: 10px;
 }
 
 .navlink:hover {
     font-weight: 550;
     color:#6247aa;
-}
-
-.allnavlinks {
-
-    margin-right: 20px;
-    display: flex;
 }
 
 
