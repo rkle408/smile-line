@@ -78,4 +78,8 @@
     .fees {
         margin: 2rem;
     }
+
+    img {
+        max-width: 80%;
+    }
 }
