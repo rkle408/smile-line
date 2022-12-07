@@ -33,9 +33,13 @@
 
 .questions,
 .fees,
-.hipaa,
+
+.hipaa, 
+.hhf,
+.contact,
 .terms {
-    margin: 0 5rem;
+    margin: 5rem;
+
 }
 
 .contactTitle {
