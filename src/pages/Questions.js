@@ -8,7 +8,7 @@ const Questions = () => {
 
     return (
         <div className="questions">    
-            <h1 className="title">You have questions? We have answers!</h1><br/>
+            <h1 className="title">You have dental questions? We have answers!</h1><br/>
         <div>
         <Row xs={1} md={2} className="g-4">
             <Col>
