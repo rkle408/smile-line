@@ -1,4 +1,3 @@
-
 .title,
 .contactTitle {
     font-size: 40px;
@@ -34,7 +33,6 @@
 
 .questions,
 .fees,
-
 .hipaa, 
 .hhf,
 .contact,
@@ -68,4 +66,16 @@
 .terms {
     min-height: 75vh;
 
+}
+
+@media screen and (max-width: 768px) {
+    .questions,
+    .hipaa, 
+    .hhf,
+    .contact,
+    .terms,
+    .findDoc,
+    .fees {
+        margin: 2rem;
+    }
 }
