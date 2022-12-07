@@ -68,6 +68,12 @@
 
 }
 
+.termImg {
+    height:50%;
+    width:50%;
+    border-radius: 8px;
+}
+
 @media screen and (max-width: 768px) {
     .questions,
     .hipaa, 
@@ -80,6 +86,11 @@
     }
 
     img {
-        max-width: 80%;
+        min-width: 80%;
+    }
+
+    .termImg {
+        min-width: 100%;
+        align-items: center;
     }
 }
