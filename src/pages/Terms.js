@@ -1,5 +1,5 @@
 import React from "react";
-import Card from 'react-bootstrap/Card';
+import Accordion from 'react-bootstrap/Accordion';
 import "./style.css";
 import caries from '../assets/caries.jpg';
 import plaquecalc from '../assets/plaquecalc.png';
@@ -13,9 +13,11 @@ const Terms = () => {
     return (
         <div className="terms">
             <h1 className="title">What's that word you're using, doc?</h1><br/>
-            <Card>
-                <Card.Header  as="h5">Caries</Card.Header>
-                <Card.Body>
+            
+            <Accordion>
+            <Accordion.Item eventKey="0">
+                <Accordion.Header  as="h5">Caries</Accordion.Header>
+                <Accordion.Body>
                     <img className="termImg" alt="Illustration about dental decay" src={caries} style={{height:"50%", width:"50%"}}/><br/><br/>
                     <blockquote className="blockquote mb-0">
                         <p>
@@ -39,13 +41,12 @@ const Terms = () => {
                             Someone famous in <cite title="Source Title">Source Title</cite>
                         </footer> */}
                     </blockquote>
-                </Card.Body>
-            </Card>
-            <br/>
+                </Accordion.Body>
+            </Accordion.Item>
 
-            <Card>
-                <Card.Header as="h5">Plaque</Card.Header>
-                <Card.Body>
+            <Accordion.Item eventKey="1">
+                <Accordion.Header as="h5">Plaque</Accordion.Header>
+                <Accordion.Body>
                     <img className="termImg" alt="Illustration comparing plaque and tartar" src={plaquecalc}/><br/><br/>
                     <blockquote className="blockquote mb-0">
                         <p>
@@ -66,13 +67,12 @@ const Terms = () => {
                             Someone famous in <cite title="Source Title">Source Title</cite>
                         </footer> */}
                     </blockquote>
-                </Card.Body>
-            </Card>
-            <br/>
+                </Accordion.Body>
+            </Accordion.Item>
 
-            <Card>
-                <Card.Header as="h5">Calculus</Card.Header>
-                <Card.Body>
+            <Accordion.Item eventKey="2">
+                <Accordion.Header as="h5">Calculus</Accordion.Header>
+                <Accordion.Body>
                     <img className="termImg" alt="Calculus on teeth and after it is removed" src={calculus}/><br/><br/>
                     <blockquote className="blockquote mb-0">
                         <p>
@@ -90,13 +90,12 @@ const Terms = () => {
                             {' '}
                         </p>
                     </blockquote>
-                </Card.Body>
-            </Card>
-            <br/>
+                </Accordion.Body>
+            </Accordion.Item>
 
-            <Card>
-                <Card.Header as="h5">Gum Disease: Gingivitis, Periodontitis</Card.Header>
-                <Card.Body>
+            <Accordion.Item eventKey="3">
+                <Accordion.Header as="h5">Gum Disease: Gingivitis, Periodontitis</Accordion.Header>
+                <Accordion.Body>
                     <img className="termImg" alt="Illustration of stages of gum disease" src={perio}/><br/><br/>
                     <blockquote className="blockquote mb-0">
                         <p>
@@ -111,13 +110,12 @@ const Terms = () => {
                             {' '}
                         </p>
                     </blockquote>
-                </Card.Body>
-            </Card>
-            <br/>
+                </Accordion.Body>
+            </Accordion.Item>
 
-            <Card>
-                <Card.Header as="h5">Filling</Card.Header>
-                <Card.Body>
+            <Accordion.Item eventKey="4">
+                <Accordion.Header as="h5">Filling</Accordion.Header>
+                <Accordion.Body>
                     <img className="termImg" alt="Illustration of a filling" src={filling}/><br/><br/>
                     <blockquote className="blockquote mb-0">
                         <p>
@@ -130,13 +128,12 @@ const Terms = () => {
                             {' '}
                         </p>
                     </blockquote>
-                </Card.Body>
-            </Card>
-            <br/>
+                </Accordion.Body>
+            </Accordion.Item>
 
-            <Card>
-                <Card.Header as="h5">Crown</Card.Header>
-                <Card.Body>
+            <Accordion.Item eventKey="5">
+                <Accordion.Header as="h5">Crown</Accordion.Header>
+                <Accordion.Body>
                     <img className="termImg" alt="Illustration about dental decay" src={crown}/><br/><br/>
                     <blockquote className="blockquote mb-0">
                         <p>
@@ -151,13 +148,12 @@ const Terms = () => {
                             {' '}
                         </p>
                     </blockquote>
-                </Card.Body>
-            </Card>
-            <br/>
+                </Accordion.Body>
+            </Accordion.Item>
 
-            {/* <Card>
-                <Card.Header as="h5"></Card.Header>
-                <Card.Body>
+            {/* <Accordion.Item eventKey="0">
+                <Accordion.Header as="h5"></Accordion.Header>
+                <Accordion.Body>
                     <blockquote className="blockquote mb-0">
                         <p>
                             {' '}
@@ -171,9 +167,9 @@ const Terms = () => {
                             {' '}
                         </p>
                     </blockquote>
-                </Card.Body>
-            </Card>
-            <br/> */}
+                </Accordion.Body>
+            </Accordion.Item>*/}
+        </Accordion>
         </div>
     )
 }
