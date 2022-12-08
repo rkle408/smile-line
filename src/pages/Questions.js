@@ -10,7 +10,7 @@ const Questions = () => {
         
         <section>
 
-            <Accordion flush>
+            <Accordion>
             
                 <Accordion.Item eventKey="0">  
                     <Accordion.Header as="h5">Without doing too much work, how do I prevent my teeth from falling out?</Accordion.Header>
