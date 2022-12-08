@@ -179,17 +179,17 @@ const Health = () => {
                 <Row className="mb-3">
                 <Col>
                     <Form.Label style={{fontWeight: 'bold'}} htmlFor='last'>
-                        Last name: <Form.Control id='last' type='text' onChange={(e) => setLastname(e.target.value)} value={lastname} />
+                        Last name: <input id='last' type='text' onChange={(e) => setLastname(e.target.value)} value={lastname} />
                     </Form.Label>   
                 </Col>
                 <Col>
                     <Form.Label style={{fontWeight: 'bold'}} htmlFor='first'>
-                        First name: <Form.Control id='first' type='text' onChange={(e) => setFirstname(e.target.value)} value={firstname} />
+                        First name: <input id='first' type='text' onChange={(e) => setFirstname(e.target.value)} value={firstname} />
                     </Form.Label>   
                 </Col>
                 <Col>
                     <Form.Label style={{fontWeight: 'bold'}} htmlFor='middle'>
-                       Middle initial: <Form.Control id='middle' type='text' onChange={(e) => setMiddleinitial(e.target.value)} value={middleinitial} />
+                       Middle initial: <input id='middle' type='text' onChange={(e) => setMiddleinitial(e.target.value)} value={middleinitial} />
                     </Form.Label>  
                 </Col>
                 </Row>
@@ -198,25 +198,25 @@ const Health = () => {
                 <Row className="mb-3">
                 <Col>
                 <Form.Label style={{fontWeight: 'bold'}} htmlFor='dob'>
-                    Date of Birth: <Form.Control id='dob' type='text' onChange={(e) => setBirthday(e.target.value)} value={birthday} />
+                    Date of Birth: <input id='dob' type='text' onChange={(e) => setBirthday(e.target.value)} value={birthday} />
                 </Form.Label> 
                 </Col>
 
                 <Col>
                 <Form.Label style={{fontWeight: 'bold'}} htmlFor='number'>
-                    Phone #: <Form.Control id='number' type='text' onChange={(e) => setPhone(e.target.value)} value={phonenumber}  />
+                    Phone #: <input id='number' type='text' onChange={(e) => setPhone(e.target.value)} value={phonenumber}  />
                 </Form.Label>
                 </Col>
 
                 <Col>
                 <Form.Label style={{fontWeight: 'bold'}} htmlFor='address'>
-                    Address: <Form.Control id='address' type='text' onChange={(e) => setAddress(e.target.value)} value={address}  />
+                    Address: <input id='address' type='text' onChange={(e) => setAddress(e.target.value)} value={address}  />
                 </Form.Label>
                 </Col>
 
                 <Col>
                 <Form.Label style={{fontWeight: 'bold'}} htmlFor='email'>
-                    Email: <Form.Control id='email' type='email' placeholder="name@example.com" onChange={(e) => setEmail(e.target.value)} value={email}  />
+                    Email: <input id='email' type='email' placeholder="name@example.com" onChange={(e) => setEmail(e.target.value)} value={email}  />
                 </Form.Label>
                 </Col>
                 </Row>
@@ -224,7 +224,7 @@ const Health = () => {
             <h2>Medical Information</h2>
             <Form.Group className="mb-3">
                 <Form.Label style={{fontWeight: 'bold'}} htmlFor="meds">Are you or have you recently taken any prescription or over the counter medicine(s)? <br/>If so, please list all, including vitamins, natural or herbal preparations and/or dietary supplements: </Form.Label>
-                <Form.Control id="meds" type="text" onChange={(e) => setMeds(e.target.value)} value={medications}/><br/>
+                <input id="meds" type="text" onChange={(e) => setMeds(e.target.value)} value={medications}/><br/>
             
             <div>
                 <p className="mb-3" style={{fontWeight: 'bold'}}>Are you allergic to or have you had a reaction to:</p>
@@ -259,7 +259,7 @@ const Health = () => {
 
             <div className="mb-3">
                 <p style={{fontWeight: 'bold'}}>Have you had an orthopedic total joint (hip, knee, elbow, finger) replacement? <br/>
-                <Form.Label htmlFor='tjr'> If yes, please provide the date and any complications: <Form.Control id="tjr" type="text" onChange={(e) => setOrthoJointReplacement(e.target.value)} value={orthojointreplacement}/> </Form.Label></p>
+                <Form.Label htmlFor='tjr'> If yes, please provide the date and any complications: <input id="tjr" type="text" onChange={(e) => setOrthoJointReplacement(e.target.value)} value={orthojointreplacement}/> </Form.Label></p>
             </div>
 
             <div className="mb-3">
@@ -326,7 +326,7 @@ const Health = () => {
 
                 <Form.Label htmlFor='OT'>
                 <Form.Check inline label='Organ Transplants - Specify:' id="OT" type='checkbox' checked={organtrans} onChange={(e) => setOrgantrans(toggle)} />
-                <Form.Control id= "OT" type="text" onChange={(e) => setOrgantranselab(e.target.value)} value={organtranselab}/>
+                <input id= "OT" type="text" onChange={(e) => setOrgantranselab(e.target.value)} value={organtranselab}/>
                 </Form.Label><br/>
 
                 <Form.Label htmlFor='smoke'>
@@ -371,9 +371,9 @@ const Health = () => {
             <div>
             <Form.Label style={{fontWeight: 'bold'}} htmlFor='exam'>
                 Date of your last dental exam:
-                <Form.Control id="exam" type='text' onChange={(e) => setDentalexam(e.target.value)} value={dentalexam} />
+                <input id="exam" type='text' onChange={(e) => setDentalexam(e.target.value)} value={dentalexam} />
                 What was done at that time?
-                <Form.Control type='text' onChange={(e) => setExamwork(e.target.value)} value={examwork} />
+                <input type='text' onChange={(e) => setExamwork(e.target.value)} value={examwork} />
             </Form.Label>
             </div>
             </Form.Group>

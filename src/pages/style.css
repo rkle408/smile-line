@@ -47,7 +47,7 @@
     background-repeat:no-repeat;
 }
 
-.contactTitle {
+.contact {
     text-align: center;
 }
 
@@ -77,6 +77,15 @@
     margin: auto;
 }
 
+.textbox {
+    width: 500px;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 3px;
+}
+
 @media screen and (max-width: 768px) {
     .questions,
     .hipaa, 
@@ -95,5 +104,9 @@
     .termImg {
         min-width: 100%;
         align-items: center;
+    }
+
+    .textbox {
+        width: 80%
     }
 }

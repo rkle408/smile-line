@@ -63,15 +63,15 @@ function Contact (){
             <form ref={form} id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <Form.Label htmlFor="name">Name: </Form.Label><br/>
-                    <Form.Control className="textbox" type="text" name="Name" defaultValue={name} onBlur={handleChange}/>
+                    <input className="textbox" type="text" name="Name" defaultValue={name} onBlur={handleChange}/>
                 </div>
                 <div>
                     <Form.Label htmlFor="email">Email: </Form.Label><br/>
-                    <Form.Control className="textbox" type="email" name="Email" defaultValue={email} onBlur={handleChange}/>
+                    <input className="textbox" type="email" name="Email" defaultValue={email} onBlur={handleChange}/>
                 </div>
                 <div>
                     <Form.Label htmlFor="message">Message: </Form.Label><br/>
-                    <Form.Control className="textbox" name="Message" as="textarea" rows={3} defaultValue={message} onBlur={handleChange}/>
+                    <input className="textbox" name="Message" as="textarea" defaultValue={message} onBlur={handleChange}/>
                 </div>
                 {errorMessage && (
                     <div>
